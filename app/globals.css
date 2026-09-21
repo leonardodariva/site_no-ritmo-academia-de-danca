@@ -432,6 +432,7 @@ footer { background:#0b0b0f; color:var(--cream); padding:80px 8vw 25px; }.brand-
 .home-testimonial-copy .v4-section-heading>h2 { margin:0 0 24px; }
 .testimonial-title-line { display:block; white-space:nowrap; }
 .testimonial-title-quote { color:var(--red); }
+.testimonial-title-stories { color:#000; font:inherit; }
 .home-testimonial-copy .v4-section-heading>span { display:block; color:#5d6170; line-height:1.7; }
 .google-review-button { display:inline-flex; align-items:center; gap:10px; margin-top:26px; padding:13px 18px; border-radius:999px; color:#fff; background:var(--red); font-size:12px; font-weight:700; line-height:1.2; transition:transform .2s,background .2s,box-shadow .2s; }
 .google-review-button:hover,.google-review-button:focus-visible { color:#fff; background:#b81921; transform:translateY(-2px); box-shadow:0 10px 24px rgba(213,34,42,.22); }
