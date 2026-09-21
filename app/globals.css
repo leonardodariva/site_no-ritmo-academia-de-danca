@@ -953,6 +953,16 @@ footer { background:#0b0b0f; color:var(--cream); padding:80px 8vw 25px; }.brand-
 
 .subpage-section-copy h3 { margin:16px 0 0; color:var(--ink); font-size:24px; line-height:1.3; letter-spacing:-.5px; }
 .subpage-section-title { min-width:0; }
+.style-video-button { display:inline-flex; align-items:center; gap:7px; width:max-content; min-height:44px; margin:18px 0 0; padding:0 18px; border:1px solid var(--blue); border-radius:999px; background:transparent; color:var(--blue); font:700 12px "Inter",sans-serif; cursor:pointer; transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease,color .2s ease; }
+.style-video-button:hover,.style-video-button:focus-visible { background:var(--blue); color:#fff; box-shadow:0 10px 24px rgba(23,71,158,.2); transform:translateY(-2px); }
+.style-video-dialog { position:fixed; inset:0; width:min(720px,calc(100% - 32px)); height:max-content; max-height:calc(100dvh - 32px); margin:auto; padding:0; border:0; border-radius:22px; background:var(--ink); color:#fff; box-shadow:0 24px 80px rgba(7,11,24,.67); }
+.style-video-dialog::backdrop { background:rgba(8,8,12,.82); }
+.style-video-dialog-inner { padding:18px; }
+.style-video-dialog-head { display:flex; align-items:center; justify-content:space-between; gap:18px; margin-bottom:16px; }
+.style-video-dialog-head strong { font-size:18px; }
+.style-video-dialog-head button { display:grid; place-items:center; flex:none; width:40px; height:40px; border:1px solid rgba(255,255,255,.4); border-radius:50%; background:transparent; color:#fff; cursor:pointer; }
+.style-video-dialog-head button:hover,.style-video-dialog-head button:focus-visible { background:#fff; color:var(--ink); }
+.style-video-player { display:block; width:100%; max-height:70dvh; aspect-ratio:16/9; border-radius:14px; background:#08080c; object-fit:contain; }
 .subpage-section-copy h3:first-child { margin-top:0; }
 .subpage-section-copy ul { margin:0; padding-left:24px; color:#54545c; line-height:1.75; }
 .private-lessons-summary, .group-lessons-summary { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }
