@@ -1,0 +1,13 @@
+# Cache immutable versioned assets for repeat visits while keeping HTML fresh.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(?:css|js|mjs|rsc|webp|woff2|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(?:html)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
