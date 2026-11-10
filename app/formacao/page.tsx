@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Formação de professores e assistentes | No Ritmo",
   description: "Conheça o CFP e o CFA, programas de formação da No Ritmo para quem deseja ensinar, apoiar aulas e desenvolver experiência em dança.",
   alternates: { canonical: "/formacao" },
-  openGraph: { title: "Formação de professores e assistentes | No Ritmo", description: "Conheça o CFP e o CFA, programas de formação da No Ritmo para quem deseja ensinar, apoiar aulas e desenvolver experiência em dança.", url: "/formacao", images: ["/logo-fundo-claro.png"] },
+  openGraph: { title: "Formação de professores e assistentes | No Ritmo", description: "Conheça o CFP e o CFA, programas de formação da No Ritmo para quem deseja ensinar, apoiar aulas e desenvolver experiência em dança.", url: "/formacao", images: ["/images/editorial/formacao-em-grupo.png"] },
 };
 
 export default function FormacaoPage() {

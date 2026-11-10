@@ -30,7 +30,6 @@ export const primaryNavigation = [
       { label: "Coreografias para eventos", href: "/coreografias/eventos" },
       { label: "Coreografias para gincanas", href: "/coreografias/gincanas" },
       { label: "Perguntas frequentes", href: "/faq" },
-      { label: "Área do aluno", href: "/area-do-aluno" },
     ],
   },
   { label: "Galeria", href: "/galeria" },

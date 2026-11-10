@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import SubpageShell from "../../SubpageShell";
 
-export const metadata: Metadata = { title: "Dança de salão gratuita em Apucarana | No Ritmo", description: "Projeto de acesso gratuito à dança de salão em Apucarana, realizado com apoio da Prefeitura Municipal.", alternates: { canonical: "/projetos/danca-de-salao-gratuita-apucarana" }, openGraph: { title: "Dança de salão gratuita em Apucarana | No Ritmo", description: "Projeto de acesso gratuito à dança de salão em Apucarana, realizado com apoio da Prefeitura Municipal.", url: "/projetos/danca-de-salao-gratuita-apucarana", images: ["/logo-fundo-claro.png"] } };
+export const metadata: Metadata = { title: "Dança de salão gratuita em Apucarana | No Ritmo", description: "Projeto de acesso gratuito à dança de salão em Apucarana, realizado com apoio da Prefeitura Municipal.", alternates: { canonical: "/projetos/danca-de-salao-gratuita-apucarana" }, openGraph: { title: "Dança de salão gratuita em Apucarana | No Ritmo", description: "Projeto de acesso gratuito à dança de salão em Apucarana, realizado com apoio da Prefeitura Municipal.", url: "/projetos/danca-de-salao-gratuita-apucarana", images: ["/images/editorial/turma-em-pratica.png"] } };
 
 export default function ProjetoDancaGratuitaPage() {
   return <SubpageShell breadcrumbParent={{ label: "Eventos e projetos", href: "/projetos" }} compactHero wideCopy heroImage="/images/editorial/turma-em-linha.png" kicker="Projeto gratuito" title="Dança de salão gratuita em Apucarana" intro="Uma oportunidade para aprender, conviver e se movimentar por meio da dança, com acesso gratuito à comunidade." sections={[

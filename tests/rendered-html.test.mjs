@@ -36,8 +36,13 @@ test("renderiza a página inicial da No Ritmo", async () => {
 });
 
 test("todas as rotas públicas principais respondem sem erro", async () => {
-  const routes = ["/sobre", "/missao-visao-valores", "/aulas", "/aulas-particulares", "/modalidades", "/servicos", "/formacao", "/formacao/cfp", "/formacao/cfa", "/coreografias/casamentos", "/coreografias/debutantes", "/coreografias/eventos", "/coreografias/gincanas", "/horarios", "/galeria", "/galeria/aulas-e-encontros", "/galeria/pratica-de-danca", "/galeria/projetos-e-comunidade", "/projetos", "/projetos/danca-de-salao-gratuita-apucarana", "/faq", "/contato", "/area-do-aluno"];
+  const routes = ["/sobre", "/missao-visao-valores", "/aulas", "/aulas-particulares", "/modalidades", "/servicos", "/formacao", "/formacao/cfp", "/formacao/cfa", "/coreografias/casamentos", "/coreografias/debutantes", "/coreografias/eventos", "/coreografias/gincanas", "/horarios", "/galeria", "/galeria/aulas-e-encontros", "/galeria/pratica-de-danca", "/galeria/projetos-e-comunidade", "/projetos", "/projetos/danca-de-salao-gratuita-apucarana", "/faq", "/contato"];
   for (const route of routes) { const response = await render(route); assert.equal(response.status, 200, `${route} deveria responder 200`); }
+});
+
+test("área do aluno permanece desativada", async () => {
+  const response = await render("/area-do-aluno");
+  assert.equal(response.status, 404);
 });
 
 test("contato e horários exibem os dados centralizados", async () => {

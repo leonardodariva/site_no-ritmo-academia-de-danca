@@ -43,7 +43,6 @@ export default function SiteHeader({ floating = false }: { floating?: boolean })
     <div className="header-socials" aria-label="Redes sociais da No Ritmo">
       <a className="social-link" href="https://www.instagram.com/noritmoacademiadedanca/" target="_blank" rel="noreferrer" aria-label="Instagram da No Ritmo"><FaInstagram aria-hidden="true" /></a>
       <a className="social-link" href="https://www.facebook.com/NoRitmoAcademiadeDanca?locale=pt_BR" target="_blank" rel="noreferrer" aria-label="Facebook da No Ritmo"><FaFacebookF aria-hidden="true" /></a>
-      <Link className="student-area-link" href="/area-do-aluno">Área do Aluno</Link>
     </div>
     <details className="mobile-menu"><summary aria-label="Abrir menu">Menu</summary><nav aria-label="Navegação mobile">{primaryNavigation.map((item) => "children" in item ? <div className="mobile-nav-section" key={item.href}><strong>{item.label}</strong>{item.children.map((child) => <Link key={child.href} href={child.href} onClick={closeMenuOnNavigate}>{child.label}</Link>)}</div> : <Link key={item.href} href={item.href} onClick={closeMenuOnNavigate}>{item.label}</Link>)}</nav></details>
   </header></>;

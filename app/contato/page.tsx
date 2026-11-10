@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { contactChannels, siteContact } from "../../content/site";
 import MapEmbed from "../MapEmbed";
 
-export const metadata: Metadata = { title: "Contato | No Ritmo Academia de Dança", description: "Fale com a No Ritmo em Apucarana para conhecer aulas, modalidades e disponibilidade.", alternates: { canonical: "/contato" }, openGraph: { title: "Contato | No Ritmo Academia de Dança", description: "Fale com a No Ritmo em Apucarana para conhecer aulas, modalidades e disponibilidade.", url: "/contato", images: ["/logo-fundo-claro.png"] } };
+export const metadata: Metadata = { title: "Contato | No Ritmo Academia de Dança", description: "Fale com a No Ritmo em Apucarana para conhecer aulas, modalidades e disponibilidade.", alternates: { canonical: "/contato" }, openGraph: { title: "Contato | No Ritmo Academia de Dança", description: "Fale com a No Ritmo em Apucarana para conhecer aulas, modalidades e disponibilidade.", url: "/contato", images: ["/images/galeria/aulas-e-encontros-banner.png"] } };
 
 export default function ContatoPage() { return <SubpageShell wideCopy compactHero kicker="Meios de contato" title="Contato e localização" intro={`Atendimento em ${siteContact.city}, ${siteContact.state}. Converse com a equipe antes da visita para confirmar endereço, acesso e disponibilidade.`} ctaIntro="Fale diretamente com a equipe" ctaTitle="Vamos encontrar a melhor experiência para você?" sections={[
   ...contactChannels.map((channel, index) => ({

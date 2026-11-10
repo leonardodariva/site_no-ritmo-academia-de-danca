@@ -10,7 +10,7 @@ export function generateStaticParams() { return galleryAlbums.map(({ slug }) => 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const album = galleryAlbums.find((item) => item.slug === slug);
-  return album ? { title: album.title + " | Galeria No Ritmo", description: album.description, alternates: { canonical: "/galeria/" + slug }, openGraph: { title: album.title + " | Galeria No Ritmo", description: album.description, url: "/galeria/" + slug, images: ["/logo-fundo-claro.png"] } } : {};
+  return album ? { title: album.title + " | Galeria No Ritmo", description: album.description, alternates: { canonical: "/galeria/" + slug }, openGraph: { title: album.title + " | Galeria No Ritmo", description: album.description, url: "/galeria/" + slug, images: [album.photos[0].src] } } : {};
 }
 export default async function AlbumPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
