@@ -116,7 +116,7 @@ test("a galeria e os projetos conectam listagens e detalhes", async () => {
 
 test("a formação apresenta CFP e CFA com responsabilidades claras", async () => {
   const html = await (await render("/formacao")).text();
-  assert.match(html, /CFP - Curso de Formação Profissional em Dança de Salão/);
+  assert.match(html, /CFP - Curso de Formação de Professores em Dança de Salão/);
   assert.match(html, /CFA - Curso de Formação de Assistentes/);
   assert.match(html, /planejar e conduzir o processo de ensino/i);
   assert.match(html, /linha de frente da aprendizagem/i);

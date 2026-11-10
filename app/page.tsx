@@ -82,7 +82,7 @@ export default function Home() {
         <article>
           <Link className="service-card-hitarea" href="/formacao/cfp" aria-label="Abrir serviço CFP" />
           <img src="/images/servicos/cfp.webp" alt="Professor demonstra a postura de dança de salão para a turma" width="1536" height="1024" loading="lazy" decoding="async" />
-          <div><h3>CFP - Curso de Formação Profissional em Dança de Salão</h3><p>Conhecimento para dançar. Método para ensinar. Autonomia para continuar aprendendo.</p><Link href="/formacao/cfp" aria-label="Saiba mais sobre o CFP">Saiba mais sobre o serviço</Link></div>
+          <div><h3>CFP - Curso de Formação de Professores em Dança de Salão</h3><p>Conhecimento para dançar. Método para ensinar. Autonomia para continuar aprendendo.</p><Link href="/formacao/cfp" aria-label="Saiba mais sobre o CFP">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/formacao/cfa" aria-label="Abrir serviço CFA" />

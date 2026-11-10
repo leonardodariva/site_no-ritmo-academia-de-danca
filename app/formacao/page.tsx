@@ -21,15 +21,15 @@ export default function FormacaoPage() {
       {
         number: "00",
         title: "Escolha seu caminho de formação",
-        content: <div className="formation-shortcuts"><Link href="/formacao/cfp"><strong>CFP - Curso de Formação Profissional</strong><span>Planejamento e condução do processo de ensino.</span><b>Conhecer o CFP →</b></Link><Link href="/formacao/cfa"><strong>CFA - Curso de Formação de Assistentes</strong><span>Apoio à equipe e aos alunos na linha de frente da aprendizagem.</span><b>Conhecer o CFA →</b></Link></div>,
+        content: <div className="formation-shortcuts"><Link href="/formacao/cfp"><strong>CFP - Curso de Formação de Professores</strong><span>Planejamento e condução do processo de ensino.</span><b>Conhecer o CFP →</b></Link><Link href="/formacao/cfa"><strong>CFA - Curso de Formação de Assistentes</strong><span>Apoio à equipe e aos alunos na linha de frente da aprendizagem.</span><b>Conhecer o CFA →</b></Link></div>,
         fullWidth: true,
       },
       {
         number: "01",
-        title: "CFP - Curso de Formação Profissional em Dança de Salão",
+        title: "CFP - Curso de Formação de Professores em Dança de Salão",
         content: <>
           <p><strong>Saber dançar é uma coisa. Saber ensinar alguém a dançar é outra.</strong></p>
-          <p>O <strong>CFP - Curso de Formação Profissional da No Ritmo</strong> é uma formação voltada para quem deseja compreender a dança de salão para além dos passos e desenvolver conhecimentos para atuar profissionalmente com o seu ensino.</p>
+          <p>O <strong>CFP - Curso de Formação de Professores da No Ritmo</strong> é uma formação voltada para quem deseja compreender a dança de salão para além dos passos e desenvolver conhecimentos para atuar profissionalmente com o seu ensino.</p>
           <p><strong>Desde 2014, o CFP acontece nesses mesmos moldes na No Ritmo</strong>, integrando conhecimentos técnicos, pedagógicos e humanos à formação profissional em dança de salão.</p>
           <p>A proposta nasceu da percepção de que um bom professor não é necessariamente aquele que possui o maior repertório de movimentos, mas aquele que consegue <strong>transformar conhecimento em aprendizagem</strong>.</p>
           <p>Por isso, desde suas primeiras edições, o CFP reúne conhecimentos de diferentes áreas aplicados à dança de salão, abordando conteúdos como <strong>didática, andragogia, cinesiologia, comunicação verbal e não verbal, análise comportamental, musicalidade, universo rítmico, oratória, empreendedorismo e marketing pessoal</strong>, além do estudo técnico dos principais estilos de dança.</p>
