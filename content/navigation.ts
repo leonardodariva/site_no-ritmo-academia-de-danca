@@ -33,7 +33,6 @@ export const primaryNavigation = [
       { label: "Área do aluno", href: "/area-do-aluno" },
     ],
   },
-  { label: "Projetos e comunidade", href: "/projetos" },
   { label: "Galeria", href: "/galeria" },
   { label: "Contato", href: "/contato" },
 ] as const;
@@ -45,7 +44,6 @@ export const footerNavigation = {
     { label: "Serviços", href: "/servicos" },
     { label: "Estilos de dança", href: "/modalidades" },
     { label: "Turmas e horários", href: "/horarios" },
-    { label: "Eventos e projetos", href: "/projetos" },
     { label: "Contato", href: "/contato" },
   ],
 } as const;

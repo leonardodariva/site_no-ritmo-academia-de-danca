@@ -85,6 +85,7 @@ export default function DebutantesPage() {
   return <SubpageShell
     wideCopy
     compactHero
+    heroImage="/images/servicos/debutantes.webp"
     kicker="Uma celebração única"
     title="Coreografias para debutantes"
     breadcrumbParent={{ label: "Serviços", href: "/servicos" }}

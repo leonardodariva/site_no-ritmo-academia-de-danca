@@ -17,6 +17,7 @@ export default function AulasParticularesPage() {
     <SubpageShell
       wideCopy
       compactHero
+      heroImage="/images/servicos/aulas-particulares.webp"
       kicker="No seu ritmo"
       title="Aulas Particulares"
       breadcrumbParent={{ label: "Serviços", href: "/servicos" }}

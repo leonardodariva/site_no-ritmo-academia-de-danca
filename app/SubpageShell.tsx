@@ -1,4 +1,4 @@
-import type { ReactNode } from "react";
+import type { CSSProperties, ReactNode } from "react";
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
 import { House } from "lucide-react";
@@ -19,14 +19,14 @@ type Section = {
   titleAddon?: ReactNode;
 };
 
-export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, ctaTitle, ctaIntro, breadcrumbParent }: { kicker: string; title: string; intro: string; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string } }) {
+export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, ctaTitle, ctaIntro, breadcrumbParent, heroImage, breadcrumbCurrentLabel }: { kicker: string; title: string; intro: string; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string }; heroImage?: string; breadcrumbCurrentLabel?: string }) {
   return (
     <main className="subpage">
       <SiteHeader />
-      <section className={compactHero ? "subpage-hero subpage-hero-photo" : "subpage-hero"} id="main-content">
+      <section className={compactHero ? "subpage-hero subpage-hero-photo" : "subpage-hero"} id="main-content" style={heroImage ? ({ "--subpage-hero-image": `url('${heroImage}')` } as CSSProperties) : undefined}>
         <p>{kicker}</p><h1>{title}</h1>{!hideHeroSummary && <div><span>No Ritmo • Apucarana</span><p>{intro}</p></div>}
       </section>
-      <nav className="subpage-breadcrumb" aria-label="Navegação estrutural"><Link className="breadcrumb-home-link" href="/" aria-label="Voltar para a página inicial"><House className="breadcrumb-home-icon" size={16} strokeWidth={2} aria-hidden="true" /><span>Página inicial</span></Link>{breadcrumbParent && <><span aria-hidden="true">/</span><Link href={breadcrumbParent.href}>{breadcrumbParent.label}</Link></>}<span aria-hidden="true">/</span><strong aria-current="page">{title}</strong></nav>
+      <nav className="subpage-breadcrumb" aria-label="Navegação estrutural"><Link className="breadcrumb-home-link" href="/" aria-label="Voltar para a página inicial"><House className="breadcrumb-home-icon" size={16} strokeWidth={2} aria-hidden="true" /><span>Página inicial</span></Link>{breadcrumbParent && <><span aria-hidden="true">/</span><Link href={breadcrumbParent.href}>{breadcrumbParent.label}</Link></>}<span aria-hidden="true">/</span><strong aria-current="page">{breadcrumbCurrentLabel ?? title}</strong></nav>
       <section className={wideCopy ? "subpage-sections subpage-sections-wide" : "subpage-sections"}>
         {sections.map((section) => {
           const paragraphs = section.paragraphs ?? (section.text ? [section.text] : []);

@@ -69,6 +69,7 @@ export default function CoreografiasPage() {
   return <SubpageShell
     wideCopy
     compactHero
+    heroImage="/images/servicos/casamentos.webp"
     kicker="Um momento para recordar"
     title="Coreografia para casamentos"
     breadcrumbParent={{ label: "Serviços", href: "/servicos" }}

@@ -103,6 +103,7 @@ export default function EventosPage() {
   return <SubpageShell
     wideCopy
     compactHero
+    heroImage="/images/servicos/eventos.webp"
     kicker="De pequenos grupos a grandes projetos"
     title="Coreografias para eventos"
     breadcrumbParent={{ label: "Serviços", href: "/servicos" }}

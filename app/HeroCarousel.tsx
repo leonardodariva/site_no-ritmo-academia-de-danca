@@ -5,10 +5,10 @@ import Link from "next/link";
 import { FaChevronLeft, FaChevronRight, FaPause, FaPlay } from "react-icons/fa";
 
 const slides = [
-  { title: "Conhecer", description: "História, pessoas e visão da No Ritmo.", image: "hero-carousel-media-1", src: "/images/propostas/modelo-casal-proximo.png", href: "/sobre" },
-  { title: "Aprender", description: "Aulas e estilos para descobrir a dança.", image: "hero-carousel-media-2", src: "/images/propostas/modelo-aula-dinamica.png", href: "/modalidades" },
-  { title: "Participar", description: "Aulas, estilos e experiências para cada objetivo.", image: "hero-carousel-media-3", src: "/images/propostas/modelo-aula-espelho.png", href: "/aulas" },
-  { title: "Conviver", description: "Encontros e projetos em comunidade.", image: "hero-carousel-media-4", src: "/images/propostas/modelo-casal-maduro.png", href: "/projetos" },
+  { title: "Conhecer", description: "História, pessoas e visão da No Ritmo.", image: "hero-carousel-media-1", src: "/images/editorial/roda-de-conversa.png", href: "/sobre" },
+  { title: "Aprender", description: "Aulas e estilos para descobrir a dança.", image: "hero-carousel-media-2", src: "/images/editorial/casal-em-pratica.png", href: "/modalidades" },
+  { title: "Participar", description: "Aulas, estilos e experiências para cada objetivo.", image: "hero-carousel-media-3", src: "/images/editorial/turma-em-pratica.png", href: "/aulas" },
+  { title: "Conviver", description: "Encontros e projetos em comunidade.", image: "hero-carousel-media-4", src: "/images/editorial/turma-em-linha.png", href: "/projetos" },
 ] as const;
 
 export default function HeroCarousel() {

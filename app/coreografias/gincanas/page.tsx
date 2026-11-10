@@ -95,6 +95,7 @@ export default function GincanasPage() {
   return <SubpageShell
     wideCopy
     compactHero
+    heroImage="/images/servicos/gincanas.webp"
     kicker="Organização e trabalho em equipe"
     title="Coreografias para gincanas escolares"
     breadcrumbParent={{ label: "Serviços", href: "/servicos" }}
