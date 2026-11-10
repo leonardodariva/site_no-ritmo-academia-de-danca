@@ -34,6 +34,7 @@ export const primaryNavigation = [
   },
   { label: "Galeria", href: "/galeria" },
   { label: "Contato", href: "/contato" },
+  { label: "Área do professor", href: "/area-do-professor" },
 ] as const;
 
 export const footerNavigation = {

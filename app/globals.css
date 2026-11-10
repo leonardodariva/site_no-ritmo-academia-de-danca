@@ -1148,6 +1148,9 @@ footer { background:#0b0b0f; color:var(--cream); padding:80px 8vw 25px; }.brand-
 .student-area-login form>button[type="submit"] { background:var(--red); color:#fff; transition:transform .2s ease,background-color .2s ease,box-shadow .2s ease; }
 .student-area-login form>button[type="submit"]:hover,.student-area-login form>button[type="submit"]:focus-visible { background:#b81921; transform:translateY(-2px); box-shadow:0 10px 24px rgba(213,34,42,.22); }
 .student-area-page .student-area-home { display:inline-flex; align-items:center; gap:8px; color:#fff; font-weight:700; line-height:1.5; }
+.teacher-login-error { margin:0 0 4px; color:#b42318; font-size:14px; line-height:1.45; }
+.nav-teacher-link { padding:9px 14px; border-radius:999px; background:var(--blue); color:#fff!important; box-shadow:0 8px 18px rgba(23,71,158,.18); }
+.nav-teacher-link:hover,.nav-teacher-link:focus-visible { background:#123a82; color:#fff!important; }
 .student-area-page .student-area-home svg { flex-shrink:0; }
 .student-area-page .student-area-home:hover { color:#dbe5ff; }
 .student-area-page .student-area-home:focus-visible { outline:2px solid #fff; outline-offset:5px; }
