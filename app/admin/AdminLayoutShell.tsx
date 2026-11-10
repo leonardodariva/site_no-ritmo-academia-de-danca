@@ -12,7 +12,7 @@ export default function AdminLayoutShell({ children }: Readonly<{ children: Reac
 
   return <main className="admin-app">
     <aside className="admin-sidebar" aria-label="Navegação administrativa">
-      <Link className="admin-brand" href="/" aria-label="Voltar para a página inicial"><img src="/logo-fundo-claro.png" alt="No Ritmo Academia de Dança" width="190" height="64" /></Link>
+      <Link className="admin-brand" href="/" aria-label="Voltar para a página inicial"><img src="/logo-fundo-claro.webp" alt="No Ritmo Academia de Dança" width="190" height="64" /></Link>
       <div className="admin-sidebar-divider" />
       <AdminNav />
       <div className="admin-sidebar-bottom"><div className="admin-restricted-note"><LockKeyhole size={16} aria-hidden="true" /><span>Acesso administrativo</span></div><Link className="admin-back-link" href="/"><ArrowLeft size={16} aria-hidden="true" />Voltar ao site</Link></div>

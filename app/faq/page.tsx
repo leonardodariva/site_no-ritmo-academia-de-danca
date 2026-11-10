@@ -3,7 +3,7 @@ import SubpageShell from "../SubpageShell";
 import { frequentlyAskedQuestions } from "../../content/faq";
 import { siteUrl } from "../../content/seo";
 
-export const metadata: Metadata = { title: "Perguntas frequentes | No Ritmo", description: "Respostas para começar na dança de salão com mais segurança e clareza.", alternates: { canonical: "/faq" }, openGraph: { title: "Perguntas frequentes | No Ritmo", description: "Respostas para começar na dança de salão com mais segurança e clareza.", url: "/faq", images: ["/images/galeria/aulas-e-encontros-banner.png"] } };
+export const metadata: Metadata = { title: "Perguntas frequentes | No Ritmo", description: "Respostas para começar na dança de salão com mais segurança e clareza.", alternates: { canonical: "/faq" }, openGraph: { title: "Perguntas frequentes | No Ritmo", description: "Respostas para começar na dança de salão com mais segurança e clareza.", url: "/faq", images: ["/images/galeria/aulas-e-encontros-banner.webp"] } };
 
 export default function FaqPage() {
   const structuredData = {

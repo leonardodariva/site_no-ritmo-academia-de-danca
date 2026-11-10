@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { ChevronRight } from "lucide-react";
 import SubpageShell from "../SubpageShell";
 
-export const metadata: Metadata = { title: "Serviços No Ritmo | Academia de Dança", description: "Conheça as aulas, coreografias e formações oferecidas pela Academia No Ritmo, em Apucarana.", alternates: { canonical: "/servicos" }, openGraph: { title: "Serviços No Ritmo | Academia de Dança", description: "Conheça as aulas, coreografias e formações oferecidas pela Academia No Ritmo, em Apucarana.", url: "/servicos", images: ["/images/galeria/aulas-e-encontros-banner.png"] } };
+export const metadata: Metadata = { title: "Serviços No Ritmo | Academia de Dança", description: "Conheça as aulas, coreografias e formações oferecidas pela Academia No Ritmo, em Apucarana.", alternates: { canonical: "/servicos" }, openGraph: { title: "Serviços No Ritmo | Academia de Dança", description: "Conheça as aulas, coreografias e formações oferecidas pela Academia No Ritmo, em Apucarana.", url: "/servicos", images: ["/images/galeria/aulas-e-encontros-banner.webp"] } };
 
 const services = [
   ["01", "Aulas particulares", "Aulas personalizadas para evoluir no seu ritmo e objetivo.", "/aulas-particulares"],

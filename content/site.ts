@@ -49,5 +49,5 @@ export const weeklySchedule: ScheduleDay[] = [
   { day: "Quarta-feira", teacher: "Professora Lilian", sessions: [{ level: "Nível iniciante", time: "20h00 - 21h30" }] },
   { day: "Quinta-feira", teacher: "Professor Luciano", sessions: [{ level: "Nível 2", time: "20h00 - 21h30" }] },
   { day: "Sexta-feira", teacher: "", sessions: [] },
-  { day: "Sábado", teacher: "Professor Luciano", sessions: [{ level: "Turma iniciante", time: "13h30 - 15h00" }, { level: "Turma de iniciados", time: "15h00 - 16h30" }] },
+  { day: "Sábado", teacher: "Professor Luciano", sessions: [{ level: "Nível iniciante", time: "13h30 - 15h00" }, { level: "Nível iniciados", time: "15h00 - 16h30" }] },
 ];

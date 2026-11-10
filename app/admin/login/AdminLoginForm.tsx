@@ -26,7 +26,7 @@ export default function AdminLoginForm({ returnTo }: { returnTo: string }) {
   return <main className="admin-login-page">
     <Link className="admin-login-home" href="/"><House size={17} aria-hidden="true" /> Voltar para o site</Link>
     <section className="admin-login-card" aria-labelledby="admin-login-title">
-      <Link className="admin-login-brand" href="/" aria-label="Voltar para a página inicial"><img src="/logo-fundo-claro.png" alt="No Ritmo Academia de Dança" width="190" height="64" /></Link>
+      <Link className="admin-login-brand" href="/" aria-label="Voltar para a página inicial"><img src="/logo-fundo-claro.webp" alt="No Ritmo Academia de Dança" width="190" height="64" /></Link>
       <p className="admin-eyebrow admin-login-title" id="admin-login-title">Painel de controle No Ritmo</p>
       <form className="admin-login-form" onSubmit={handleSubmit} noValidate>
         <label htmlFor="admin-email">E-mail</label><input id="admin-email" name="email" type="email" autoComplete="username" placeholder="Seu e-mail" required />

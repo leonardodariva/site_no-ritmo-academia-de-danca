@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Música e musicalidade na dança | No Ritmo",
   description: "Aprenda a compreender a música para transformar sua escuta em movimento consciente na dança de salão.",
   alternates: { canonical: "/musicalidade" },
-  openGraph: { title: "Música e musicalidade na dança | No Ritmo", description: "Um curso para aproximar música e movimento por meio de pulsação, frases, acentos, pausas e interpretação.", url: "/musicalidade", images: ["/images/musica-aplicada-a-danca-ajustada.png"] },
+  openGraph: { title: "Música e musicalidade na dança | No Ritmo", description: "Um curso para aproximar música e movimento por meio de pulsação, frases, acentos, pausas e interpretação.", url: "/musicalidade", images: ["/images/musica-aplicada-a-danca-ajustada.webp"] },
 };
 
 export default function MusicalidadePage() {

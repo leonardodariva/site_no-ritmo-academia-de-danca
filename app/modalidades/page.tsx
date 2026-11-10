@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title,
   description,
   alternates: { canonical: "/modalidades" },
-  openGraph: { title, description, url: "/modalidades", images: ["/images/galeria/aulas-e-encontros-banner.png"] },
+  openGraph: { title, description, url: "/modalidades", images: ["/images/galeria/aulas-e-encontros-banner.webp"] },
 };
 
 export default function ModalidadesPage() {
