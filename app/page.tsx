@@ -41,7 +41,7 @@ export default function Home() {
     <section className="home-music-section" id="musicalidade" aria-labelledby="home-music-title">
       <div className="home-music-heading"><p>Música aplicada à dança</p><h2 id="home-music-title">O espaço entre ouvir e compreender</h2></div>
       <div className="home-music-copy"><p>Na dança de salão, aprender passos é apenas parte do caminho. Também é preciso compreender o que a música está dizendo ao corpo.</p><p>Nosso ensino aproxima música e movimento, trabalhando pulsação, frases, acentos, pausas e interpretação para que cada escolha de dança aconteça com mais consciência e intenção.</p><Link className="home-music-link" href="/musicalidade">Conheça o curso de música aplicada à dança</Link></div>
-      <div className="home-music-visual"><img src="/images/musica-aplicada-a-danca-ajustada.webp" alt="Professor conduzindo uma prática de ritmo com alunos na No Ritmo" width="1536" height="1024" loading="lazy" decoding="async" /></div>
+      <div className="home-music-visual"><img src="/images/musica-aplicada-a-danca-ajustada-display.webp" alt="Professor conduzindo uma prática de ritmo com alunos na No Ritmo" width="800" height="533" loading="lazy" decoding="async" /></div>
     </section>
 
 <section className="home-classes home-services" id="produtos">
@@ -49,44 +49,44 @@ export default function Home() {
       <div className="home-services-grid">
         <article>
           <Link className="service-card-hitarea" href="/aulas-particulares" aria-label="Abrir serviço de aulas particulares" />
-          <img src="/images/servicos/aulas-particulares.webp" alt="Duas pessoas praticando dança a dois no estúdio" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/aulas-particulares-card.webp" alt="Duas pessoas praticando dança a dois no estúdio" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Aulas particulares</h3><p className="private-lessons-summary">Se o capital tempo for o seu maior ativo, as aulas particulares são a sua melhor opção.</p><Link href="/aulas-particulares" aria-label="Saiba mais sobre aulas particulares">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/aulas" aria-label="Abrir serviço de aulas em grupo" />
-          <img src="/images/servicos/aulas-em-grupo.webp" alt="Turma praticando dança de salão em pares" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/aulas-em-grupo-card.webp" alt="Turma praticando dança de salão em pares" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Aulas em grupo</h3><p className="group-lessons-summary">Aprenda a dançar, pratique e conheça pessoas. Você não precisa ter um par.</p><Link href="/aulas" aria-label="Saiba mais sobre aulas em grupo">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/coreografias/casamentos" aria-label="Abrir serviço de coreografias para casamento" />
-          <img src="/images/servicos/casamentos.webp" alt="Casal ensaiando um giro com acompanhamento da professora" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/casamentos-card.webp" alt="Casal ensaiando um giro com acompanhamento da professora" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Coreografias para casamento</h3><p>Uma dança que celebra a história do casal, com coreografia e ensaios personalizados.</p><Link href="/coreografias/casamentos" aria-label="Saiba mais sobre coreografias para casamento">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/coreografias/debutantes" aria-label="Abrir serviço de coreografias para debutantes" />
-          <img src="/images/servicos/debutantes.webp" alt="Jovem de saia lilás ensaiando um giro com a professora" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/debutantes-card.webp" alt="Jovem de saia lilás ensaiando um giro com a professora" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Coreografias para debutantes</h3><p>Celebre seus 15 anos com uma coreografia especial, feita para expressar sua personalidade.</p><Link href="/coreografias/debutantes" aria-label="Saiba mais sobre coreografias para debutantes">Saiba mais sobre o serviço</Link></div>
         </article>
       </div>
       <div className="home-services-grid home-services-extra">
         <article>
           <Link className="service-card-hitarea" href="/coreografias/eventos" aria-label="Abrir serviço de coreografias para eventos" />
-          <img src="/images/servicos/eventos.webp" alt="Grupo ensaiando movimentos sincronizados no estúdio" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/eventos-card.webp" alt="Grupo ensaiando movimentos sincronizados no estúdio" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Coreografias para eventos em geral</h3><p>Projetos personalizados para escolas, empresas e eventos, de pequenos grupos a mais de mil participantes.</p><Link href="/coreografias/eventos" aria-label="Saiba mais sobre coreografias para eventos em geral">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/coreografias/gincanas" aria-label="Abrir serviço de coreografias para gincanas" />
-          <img src="/images/servicos/gincanas.webp" alt="Equipe ensaiando uma coreografia em grupo com o instrutor" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/gincanas-card.webp" alt="Equipe ensaiando uma coreografia em grupo com o instrutor" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Coreografias para gincanas</h3><p>Uma apresentação pensada para o regulamento, o perfil da equipe e o tempo disponível.</p><Link href="/coreografias/gincanas" aria-label="Saiba mais sobre coreografias para gincanas">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/formacao/cfp" aria-label="Abrir serviço CFP" />
-          <img src="/images/servicos/cfp.webp" alt="Professor demonstra a postura de dança de salão para a turma" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/cfp-card.webp" alt="Professor demonstra a postura de dança de salão para a turma" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>CFP - Curso de Formação de Professores em Dança de Salão</h3><p>Conhecimento para dançar. Método para ensinar. Autonomia para continuar aprendendo.</p><Link href="/formacao/cfp" aria-label="Saiba mais sobre o CFP">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/formacao/cfa" aria-label="Abrir serviço CFA" />
-          <img src="/images/servicos/cfa.webp" alt="Assistente orienta a posição das mãos de uma dupla" width="1536" height="1024" loading="lazy" decoding="async" />
+          <img src="/images/servicos/cfa-card.webp" alt="Assistente orienta a posição das mãos de uma dupla" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>CFA - Curso de Formação de Assistentes</h3><p>Muito além de aprender a dançar: compreenda como as pessoas aprendem e prepare-se para apoiar o professor e acolher os alunos.</p><Link href="/formacao/cfa" aria-label="Saiba mais sobre o CFA">Saiba mais sobre o serviço</Link></div>
         </article>
       </div>
