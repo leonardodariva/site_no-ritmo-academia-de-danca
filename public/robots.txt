@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /area-do-aluno/
+Disallow: /area-do-professor/
+
+Sitemap: https://www.entrenoritmo.com.br/sitemap.xml
