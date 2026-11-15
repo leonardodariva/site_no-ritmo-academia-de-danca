@@ -17,5 +17,5 @@ const services = [
 ] as const;
 
 export default function ServicosPage() {
-  return <SubpageShell kicker="Serviços No Ritmo" compactHero title="Conheça os serviços da No Ritmo" intro="Aulas, coreografias e formações para aprender, ensinar e celebrar por meio da dança." wideCopy sections={[{ number: "01", title: "Selecione o que mais combina com você", content: <div className="services-directory">{services.map(([number, title, text, href]) => <Link href={href} key={number}><h2>{title}</h2><p>{text}</p><strong>Conhecer serviço <ChevronRight aria-hidden="true" size={20} strokeWidth={2} /></strong></Link>)}</div>, fullWidth: true }]} />;
+  return <SubpageShell kicker="Serviços No Ritmo" compactHero title="Conheça os serviços da No Ritmo" intro="Aulas, coreografias e formações para aprender, ensinar e celebrar por meio da dança." wideCopy sections={[{ number: "01", title: "Selecione o que mais combina com você.", content: <div className="services-directory">{services.map(([number, title, text, href]) => <Link href={href} key={number}><h2>{title}</h2><p>{text}</p><strong>Conhecer serviço <ChevronRight aria-hidden="true" size={20} strokeWidth={2} /></strong></Link>)}</div>, fullWidth: true }]} />;
 }

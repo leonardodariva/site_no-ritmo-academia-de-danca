@@ -21,7 +21,7 @@ export default function AulasParticularesPage() {
       kicker="No seu ritmo"
       title="Aulas Particulares"
       breadcrumbParent={{ label: "Serviços", href: "/servicos" }}
-      intro="Se o capital tempo for o seu maior ativo, as aulas particulares são a sua melhor opção."
+      intro="Seu tempo vale muito, as aulas particulares foram pensadas para aproveitá-lo ao máximo."
       sections={privateLessonSections}
       ctaIntro="Entre no Ritmo."
       ctaTitle="Fale com nossa equipe e descubra qual formato de Aula Particular combina mais com você."

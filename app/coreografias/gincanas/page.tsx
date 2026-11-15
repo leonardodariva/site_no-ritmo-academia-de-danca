@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const schoolCompetitionSections = [
   {
     number: "01",
-    title: "Coreografias para Gincanas Escolares",
+    title: "Coreografias para Gincanas Escolares.",
     content: <>
       <p>A gincana é um daqueles momentos do calendário escolar que os alunos esperam o ano inteiro.</p>
       <p>As equipes se organizam, surgem as ideias, começam os ensaios e, quando existe uma prova envolvendo dança ou apresentação artística, aparece também o desafio:</p>
@@ -25,7 +25,7 @@ const schoolCompetitionSections = [
   },
   {
     number: "02",
-    title: "Não é apenas aprender uma sequência de passos",
+    title: "Não é apenas aprender uma sequência de passos.",
     content: <>
       <p>Em uma gincana, normalmente existe um objetivo muito claro: <strong>entregar uma boa apresentação.</strong></p>
       <p>E isso envolve muito mais do que escolher alguns movimentos.</p>
@@ -36,16 +36,21 @@ const schoolCompetitionSections = [
   },
   {
     number: "03",
-    title: "Primeiro, queremos conhecer o desafio",
+    title: "Primeiro, queremos conhecer o desafio.",
     content: <>
-      <p>Antes de começarmos a montagem, é importante entender exatamente o que a escola ou a equipe precisa apresentar.</p>
-      <p>Existe regulamento?<br />Qual é o tema?<br />Existe um estilo de dança obrigatório?<br />A música é livre ou determinada pela organização?<br />Qual é o tempo máximo da apresentação?<br />Quantos alunos participarão?<br />Qual a idade deles?<br />Qual é o espaço disponível?<br />Quando acontecerá a prova?<br />Quanto tempo temos para ensaiar?</p>
-      <p>A partir dessas informações, conseguimos avaliar a complexidade do trabalho e definir uma estratégia de preparação.</p>
+      <p>Antes de começar a montagem, precisamos entender exatamente o que será apresentado:</p>
+      <ul>
+        <li><strong>Regras</strong> - existe regulamento, tema ou estilo de dança obrigatório? A música é livre?</li>
+        <li><strong>Grupo</strong> - quantos alunos e de que idade?</li>
+        <li><strong>Apresentação</strong> - qual o tempo máximo e o espaço disponível?</li>
+        <li><strong>Prazos</strong> - quando é a prova e quanto tempo temos para ensaiar?</li>
+      </ul>
+      <p>Com essas respostas, avaliamos a complexidade do trabalho e definimos a melhor estratégia de preparação.</p>
     </>,
   },
   {
     number: "04",
-    title: "Quanto antes a equipe começar, maiores são as possibilidades",
+    title: "Quanto antes a equipe começar, maiores são as possibilidades.",
     content: <>
       <p>Em Apucarana, muitas gincanas e atividades escolares desse tipo acontecem próximas aos meses de <strong>junho e julho</strong>.</p>
       <p>Por isso, recomendamos que as equipes não deixem para procurar ajuda somente quando a data da apresentação estiver próxima.</p>
@@ -68,7 +73,7 @@ const schoolCompetitionSections = [
   },
   {
     number: "06",
-    title: "Sincronização, organização e trabalho em equipe",
+    title: "Sincronização, organização e trabalho em equipe.",
     content: <>
       <p>Existe ainda um aprendizado muito interessante durante a preparação para uma gincana.</p>
       <p>Para que a apresentação funcione, cada participante precisa compreender que faz parte de um conjunto.</p>
@@ -87,6 +92,22 @@ const schoolCompetitionSections = [
       <p>A partir daí, podemos entender o desafio, avaliar o número de participantes, o prazo disponível e pensar na melhor maneira de transformar aquela proposta em uma apresentação.</p>
       <p><strong>Primeiro entendemos a prova. Depois conhecemos a equipe. E então construímos a coreografia.</strong></p>
       <p>Porque em uma gincana, uma boa apresentação começa muito antes de a música tocar.</p>
+    </>,
+  },
+  {
+    number: "08",
+    title: "Compilado: o que a gincana desenvolve nos alunos.",
+    content: <>
+      <p><strong>Trabalho em equipe:</strong> cooperar e entender que o resultado é coletivo.</p>
+      <p><strong>Liderança:</strong> organizar, tomar decisões e motivar o grupo.</p>
+      <p><strong>Responsabilidade:</strong> cumprir combinados, horários e funções.</p>
+      <p><strong>Comunicação:</strong> ouvir, argumentar e resolver conflitos.</p>
+      <p><strong>Criatividade:</strong> transformar uma ideia em apresentação.</p>
+      <p><strong>Disciplina e persistência:</strong> ensaiar, errar, ajustar e seguir.</p>
+      <p><strong>Planejamento:</strong> administrar prazos e recursos.</p>
+      <p><strong>Autoconfiança:</strong> se apresentar diante de colegas e do público.</p>
+      <p><strong>Pertencimento:</strong> criar vínculos e fortalecer a identidade da turma e da escola.</p>
+      <p>A gincana não termina quando a música para, o que os alunos aprendem juntos, em cooperação, liderança, responsabilidade e confiança, fica para a vida. E é isso que uma boa coreografia ajuda a construir.</p>
     </>,
   },
 ];

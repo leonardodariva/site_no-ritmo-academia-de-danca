@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const weddingSections = [
   {
     number: "01",
-    title: "A dança do casamento também merece ser preparada com calma",
+    title: "A dança do casamento também merece ser preparada com calma.",
     content: <>
       <p>A dança dos noivos é um dos momentos mais simbólicos da celebração. É quando, por alguns minutos, tudo parece parar: os convidados voltam a atenção para o casal e a música, a história e o movimento se encontram para criar uma lembrança que ficará registrada para sempre.</p>
       <p>Por isso, <strong>na Academia No Ritmo</strong>, recomendamos que a preparação da coreografia comece, sempre que possível, <strong>com pelo menos 6 meses de antecedência</strong>.</p>
@@ -23,7 +23,7 @@ const weddingSections = [
   },
   {
     number: "02",
-    title: "Quanto mais perto do casamento, mais coisas disputam a atenção dos noivos",
+    title: "Quanto mais perto do casamento, mais coisas disputam a atenção dos noivos.",
     content: <>
       <p>Nos últimos dois meses antes da cerimônia, normalmente começam a se acumular decisões, confirmações e compromissos: fornecedores, decoração, convidados, roupas, ensaios, documentação, detalhes da cerimônia, ajustes da festa e inúmeros imprevistos.</p>
       <p>Começar a dança justamente nesse período pode transformar algo que deveria ser prazeroso em mais uma tarefa com prazo para cumprir.</p>
@@ -44,7 +44,7 @@ const weddingSections = [
   },
   {
     number: "04",
-    title: "E as aulas podem se tornar um momento do casal",
+    title: "E as aulas podem se tornar um momento do casal.",
     content: <>
       <p>Existe ainda uma vantagem que vai além da apresentação.</p>
       <p>Em meio a tantos compromissos da preparação do casamento, as aulas podem se transformar em um espaço reservado aos dois: um momento para aprender, rir dos erros, evoluir juntos e construir uma experiência que começa muito antes da festa.</p>

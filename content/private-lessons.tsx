@@ -1,7 +1,7 @@
 export const privateLessonSections = [
   {
     number: "01",
-    title: "A experiência mais completa e personalizada da No Ritmo",
+    title: "A experiência mais completa e personalizada da No Ritmo.",
     content: <>
       <p>Se você busca aprender com mais segurança, ter acompanhamento próximo e aproveitar melhor cada momento do seu aprendizado, as <strong>Aulas Particulares são o serviço mais completo da No Ritmo Academia de Dança.</strong></p>
       <p>E quando falamos em aula particular, não estamos falando necessariamente de uma aula para uma única pessoa.</p>
@@ -24,7 +24,7 @@ export const privateLessonSections = [
   },
   {
     number: "03",
-    title: "Escolha sua modalidade",
+    title: "Escolha sua modalidade.",
     content: <>
       <h3>Individual</h3>
       <p>Uma experiência de aprendizagem totalmente direcionada a você.</p>
@@ -46,7 +46,7 @@ export const privateLessonSections = [
   },
   {
     number: "04",
-    title: "Na Academia No Ritmo ou em casa",
+    title: "Na Academia No Ritmo ou em casa?",
     content: <>
       <p>Você também pode escolher onde deseja viver essa experiência.</p>
       <p>As aulas podem acontecer <strong>na Academia No Ritmo</strong> ou, mediante disponibilidade e condições de atendimento, <strong>em sua casa ou em outro espaço adequado.</strong></p>
@@ -55,7 +55,7 @@ export const privateLessonSections = [
   },
   {
     number: "05",
-    title: "Um ou mais professores",
+    title: "Um ou mais professores?",
     content: <>
       <p>Outra característica das nossas Aulas Particulares é a possibilidade de personalizar também a equipe que irá atendê-lo.</p>
       <p>Dependendo dos seus objetivos e da modalidade escolhida, a experiência pode ser realizada com:</p>
@@ -77,7 +77,7 @@ export const privateLessonSections = [
   },
   {
     number: "07",
-    title: "Mais do que aprender movimentos",
+    title: "Mais do que aprender movimentos.",
     content: <>
       <p>Nossa proposta não é simplesmente fazer você decorar sequências.</p>
       <p>Queremos que você compreenda a dança.</p>
@@ -88,7 +88,7 @@ export const privateLessonSections = [
   },
   {
     number: "08",
-    title: "Um ecossistema de aprendizagem",
+    title: "Um ecossistema de aprendizagem.",
     content: <>
       <p>A experiência da aula particular pode ir além do encontro com o professor.</p>
       <p>Conforme sua evolução, modalidade contratada e condições do programa escolhido, você poderá ser orientado a participar também de <strong>aulas coletivas compatíveis com o seu nível.</strong></p>

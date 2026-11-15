@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const eventSections = [
   {
     number: "01",
-    title: "Coreografias para eventos: de pequenos grupos a grandes projetos",
+    title: "Coreografias para eventos: de pequenos grupos a grandes projetos.",
     content: <>
       <p>Uma coreografia pode transformar um momento do evento em uma experiência capaz de envolver participantes, surpreender o público e permanecer na memória de quem participou.</p>
       <p>E quando falamos em eventos, as possibilidades são muitas.</p>
@@ -40,7 +40,7 @@ const eventSections = [
   },
   {
     number: "03",
-    title: "Antes de falar em coreografia, precisamos entender o evento",
+    title: "Antes de falar em coreografia, precisamos entender o evento.",
     content: <>
       <p>Em projetos dessa natureza, uma das primeiras etapas do nosso trabalho é uma <strong>entrevista de diagnóstico</strong>.</p>
       <p>Precisamos compreender o que o contratante deseja realizar, qual é a dimensão do projeto e quais condições teremos para desenvolvê-lo.</p>
@@ -51,7 +51,7 @@ const eventSections = [
   },
   {
     number: "04",
-    title: "Quanto maior o projeto, mais importante é o planejamento",
+    title: "Quanto maior o projeto, mais importante é o planejamento.",
     content: <>
       <p>Ensinar uma coreografia para dez pessoas é diferente de coordenar cinquenta, cem, quinhentas ou mais de mil.</p>
       <p>Em grandes grupos, não pensamos apenas nos passos.</p>
@@ -63,7 +63,7 @@ const eventSections = [
   },
   {
     number: "05",
-    title: "Antecedência nos dá possibilidades",
+    title: "Antecedência nos dá possibilidades.",
     content: <>
       <p>Quanto antes conhecemos o projeto, maior é nossa capacidade de planejar.</p>
       <p>Com antecedência podemos testar ideias, adaptar movimentos ao perfil dos participantes, organizar grupos, corrigir dificuldades, trabalhar a ocupação do espaço e permitir que a coreografia seja assimilada gradualmente.</p>
@@ -75,7 +75,7 @@ const eventSections = [
   },
   {
     number: "06",
-    title: "Dezenas, centenas ou mais de mil pessoas: a metodologia precisa acompanhar a dimensão do projeto",
+    title: "Dezenas, centenas ou mais de mil pessoas: a metodologia precisa acompanhar a dimensão do projeto.",
     content: <>
       <p>Experiências como a apresentação dos <strong>60 anos do Colégio Nossa Senhora Aparecida, com mais de 1.300 alunos</strong>, mostram que grandes projetos exigem mais do que criatividade coreográfica.</p>
       <p>Exigem <strong>planejamento, organização, metodologia de ensino e capacidade de transformar um grande número de participantes em um único conjunto.</strong></p>
@@ -86,7 +86,7 @@ const eventSections = [
   },
   {
     number: "07",
-    title: "Cada grande apresentação começa com uma conversa",
+    title: "Cada grande apresentação começa com uma conversa.",
     content: <>
       <p>Por isso, para coreografias de eventos, escolas, empresas e grandes grupos, recomendamos que o primeiro contato seja realizado <strong>com a maior antecedência possível</strong>.</p>
       <p>A partir de uma entrevista inicial, conseguimos compreender a proposta e avaliar a estrutura necessária para transformá-la em um projeto coreográfico.</p>

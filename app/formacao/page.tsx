@@ -20,7 +20,7 @@ export default function FormacaoPage() {
     sections={[
       {
         number: "00",
-        title: "Escolha seu caminho de formação",
+        title: "Escolha seu caminho de formação.",
         content: <div className="formation-shortcuts"><Link href="/formacao/cfp"><strong>CFP - Curso de Formação de Professores</strong><span>Planejamento e condução do processo de ensino.</span><b>Conhecer o CFP →</b></Link><Link href="/formacao/cfa"><strong>CFA - Curso de Formação de Assistentes</strong><span>Apoio à equipe e aos alunos na linha de frente da aprendizagem.</span><b>Conhecer o CFA →</b></Link></div>,
         fullWidth: true,
       },
@@ -42,16 +42,16 @@ export default function FormacaoPage() {
           <p>Em vez de simplesmente reproduzir aquilo que aprendeu, ele começa a desenvolver capacidade de <strong>observar, analisar, experimentar, adaptar e construir estratégias de ensino</strong> de acordo com as necessidades de cada aluno.</p>
           <p>É daí que nasce um dos princípios que orientam nossa formação:</p>
           <blockquote>“Se não houve aprendizagem, é porque não houve ensino.”</blockquote>
-          <h3>Aprender a aprender</h3>
+          <h3>Aprender a aprender.</h3>
           <p>Outro pilar fundamental do CFP é o desenvolvimento da autonomia.</p>
           <p>Acreditamos que uma formação profissional não deve criar professores dependentes de sequências prontas ou de um único método de explicação. Por isso, estimulamos aquilo que chamamos de <strong>“aprender a aprender”</strong>.</p>
           <p>O participante é incentivado a pesquisar, questionar, observar, testar, compreender fundamentos e construir conhecimento continuamente.</p>
           <p>Porque a formação de um professor não termina quando termina um curso.</p>
-          <h3>Teoria que encontra a prática</h3>
+          <h3>Teoria que encontra a prática.</h3>
           <p>O CFP aproxima o conhecimento teórico das situações reais encontradas dentro de uma sala de aula.</p>
           <p>O participante desenvolve sua capacidade de observar diferentes corpos, dificuldades, ritmos de aprendizagem e formas de comunicação, entendendo que <strong>pessoas diferentes podem precisar de caminhos diferentes para chegar ao mesmo aprendizado</strong>.</p>
           <p>Nesse processo, técnica e conhecimento caminham junto com <strong>comunicação, acolhimento, responsabilidade, liderança e desenvolvimento humano</strong>.</p>
-          <h3>Uma formação para quem deseja ir além da dança</h3>
+          <h3>Uma formação para quem deseja ir além da dança.</h3>
           <p>O CFP não foi criado apenas para formar pessoas que saibam demonstrar movimentos.</p>
           <p>Foi criado para desenvolver profissionais capazes de <strong>compreender a dança, compreender o aluno e compreender o processo que conecta os dois.</strong></p>
           <p>Porque ensinar dança de salão envolve muito mais do que passos.</p>
@@ -78,7 +78,7 @@ export default function FormacaoPage() {
       },
       {
         number: "03",
-        title: "Uma formação ligada à prática",
+        title: "Uma formação ligada à prática.",
         text: "Os programas fazem parte da cultura de aprendizagem contínua da No Ritmo. Conteúdos, critérios de participação, calendário e etapas serão apresentados pela equipe de acordo com cada turma e edição.",
       },
       {

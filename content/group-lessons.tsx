@@ -20,7 +20,7 @@ export const groupLessonSections = [
   },
   {
     number: "03",
-    title: "Você não precisa ter um par",
+    title: "Você não precisa ter um par.",
     content: <>
       <p>Essa é uma das dúvidas mais comuns de quem pensa em começar:</p>
       <p><strong>“Preciso levar alguém para fazer as aulas?”</strong></p>
@@ -32,7 +32,7 @@ export const groupLessonSections = [
   },
   {
     number: "04",
-    title: "Aprendizado que acontece também na troca",
+    title: "Aprendizado que acontece também na troca.",
     content: <>
       <p>Em uma aula coletiva, você aprende com o professor, mas também aprende através das experiências proporcionadas pelo grupo.</p>
       <p>Observar outras pessoas, experimentar diferentes conduções e respostas, perceber dificuldades semelhantes às suas e encontrar novas formas de executar um movimento amplia as possibilidades de aprendizagem.</p>
@@ -41,7 +41,7 @@ export const groupLessonSections = [
   },
   {
     number: "05",
-    title: "Muito além da técnica",
+    title: "Muito além da técnica.",
     content: <>
       <p>Aprender dança de salão envolve o corpo, mas também envolve comunicação e convivência.</p>
       <p>As aulas criam oportunidades para conhecer pessoas, interagir, desenvolver confiança e participar de um ambiente no qual todos compartilham um objetivo em comum: aprender.</p>
@@ -50,7 +50,7 @@ export const groupLessonSections = [
   },
   {
     number: "06",
-    title: "Aprenda no seu nível",
+    title: "Aprenda no seu nível.",
     content: <>
       <p>Para proporcionar uma experiência de aprendizagem mais adequada, organizamos nossas aulas considerando diferentes níveis de desenvolvimento.</p>
       <p>Assim, quem está começando encontra conteúdos e desafios compatíveis com essa etapa, enquanto quem já possui experiência pode continuar ampliando seu repertório e aprofundando seus conhecimentos.</p>
@@ -69,7 +69,7 @@ export const groupLessonSections = [
   },
   {
     number: "08",
-    title: "Mais de 20 horas semanais de possibilidades",
+    title: "Mais de 20 horas semanais de possibilidades.",
     content: <>
       <p>A No Ritmo oferece uma ampla programação de aulas em grupo, com <strong>mais de 20 horas semanais de atividades</strong>, proporcionando diferentes oportunidades para aprender e praticar.</p>
       <p>Isso permite que a dança faça parte da sua rotina e que você encontre possibilidades compatíveis com seu nível, disponibilidade e objetivos.</p>
@@ -78,7 +78,7 @@ export const groupLessonSections = [
   },
   {
     number: "09",
-    title: "Parte do ecossistema de aprendizagem No Ritmo",
+    title: "Parte do ecossistema de aprendizagem No Ritmo.",
     content: <>
       <p>As aulas em grupo também fazem parte do nosso <strong>Ecossistema de Aprendizagem No Ritmo</strong>.</p>
       <p>Quem combina aulas particulares e aulas em grupo encontra duas experiências que se complementam:</p>

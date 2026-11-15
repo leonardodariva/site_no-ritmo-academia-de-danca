@@ -26,7 +26,7 @@ export default function Home() {
       <div className="v4-hero-copy">
         <p>Dança, conexão e conhecimento</p>
         <h1>A dança começa no movimento.<br /><em>E continua nas relações.</em></h1>
-        <span>Fundada em 2010, em Apucarana, a No Ritmo já recebeu mais de 10 mil pessoas e acredita que dançar é aprender, conviver e desenvolver-se para além dos passos.</span>
+        <span>Fundada em 2010, em Apucarana, a No Ritmo já atendeu mais de 10 mil pessoas em aulas, cursos e projetos. Acreditamos que dançar vai além dos passos: é uma forma de aprender, conviver e se desenvolver.</span>
         <div><Link className="button" href="#produtos">Conheça nossos serviços</Link><Link className="text-link" href="#sobre">Clique para conhecer a No Ritmo</Link></div>
       </div>
       <HeroCarousel />
@@ -35,22 +35,22 @@ export default function Home() {
     <section className="v4-statement" id="sobre">
       <p className="statement-eyebrow">Sobre a No Ritmo</p>
       <div className="statement-visual" role="img" aria-label="Turma em formação na No Ritmo" />
-      <div className="statement-copy"><p className="statement-eyebrow">Sobre a No Ritmo</p><h2>Muito além de aprender a dançar</h2><p>Desde&nbsp;2010, a No Ritmo Academia de Dança conecta pessoas por meio da dança de salão. Em Apucarana, mais de 10 mil pessoas já fizeram parte dessa história.<br />Nosso ensino integra técnica, consciência corporal, comunicação e convivência, respeitando o ritmo de cada pessoa e desenvolvendo autonomia para aprender e dançar.<br />Acreditamos que dançar é perceber a si mesmo, compreender o outro e aprender juntos.</p><Link className="statement-button" href="/sobre">Saiba mais sobre a No Ritmo</Link></div>
+      <div className="statement-copy"><p className="statement-eyebrow">Sobre a No Ritmo</p><h2>Muito além de aprender a dançar.</h2><p>Desde&nbsp;2010, a No Ritmo Academia de Dança conecta pessoas por meio da dança de salão. Em Apucarana, mais de 10 mil pessoas já fizeram parte dessa história.<br />Nosso ensino integra técnica, consciência corporal, comunicação e convivência, respeitando o ritmo de cada pessoa e desenvolvendo autonomia para aprender e dançar.<br />Acreditamos que dançar é perceber a si mesmo, compreender o outro e aprender juntos.</p><Link className="statement-button" href="/sobre">Saiba mais sobre a No Ritmo</Link></div>
     </section>
 
     <section className="home-music-section" id="musicalidade" aria-labelledby="home-music-title">
-      <div className="home-music-heading"><p>Música aplicada à dança</p><h2 id="home-music-title">O espaço entre ouvir e compreender</h2></div>
-      <div className="home-music-copy"><p>Na dança de salão, aprender passos é apenas parte do caminho. Também é preciso compreender o que a música está dizendo ao corpo.</p><p>Nosso ensino aproxima música e movimento, trabalhando pulsação, frases, acentos, pausas e interpretação para que cada escolha de dança aconteça com mais consciência e intenção.</p><Link className="home-music-link" href="/musicalidade">Conheça o curso de música aplicada à dança</Link></div>
+      <div className="home-music-heading"><p>Música aplicada à dança</p><h2 id="home-music-title">O espaço entre ouvir e compreender.</h2></div>
+      <div className="home-music-copy"><p>Na dança de salão, aprender passos é apenas parte do caminho.<br />Também é preciso compreender o que a música está dizendo ao corpo.</p><p>Nosso ensino aproxima música e movimento, trabalhando pulsação, frases, acentos, pausas e interpretação para que cada escolha de movimento aconteça com mais consciência e intenção.</p><Link className="home-music-link" href="/musicalidade">Conheça o curso de música aplicada à dança</Link></div>
       <div className="home-music-visual"><img src="/images/musica-aplicada-a-danca-ajustada-display.webp" alt="Professor conduzindo uma prática de ritmo com alunos na No Ritmo" width="800" height="533" loading="lazy" decoding="async" /></div>
     </section>
 
 <section className="home-classes home-services" id="produtos">
-      <div className="v4-section-heading light"><p>Serviços No Ritmo</p><h2>Nossos serviços</h2><Link className="services-all-button" href="/servicos">Acessar todos os serviços</Link></div>
+      <div className="v4-section-heading light"><p>Serviços No Ritmo</p><h2>Nossos serviços.</h2><Link className="services-all-button" href="/servicos">Acessar todos os serviços</Link></div>
       <div className="home-services-grid">
         <article>
           <Link className="service-card-hitarea" href="/aulas-particulares" aria-label="Abrir serviço de aulas particulares" />
           <img src="/images/servicos/aulas-particulares-card.webp" alt="Duas pessoas praticando dança a dois no estúdio" width="800" height="533" loading="lazy" decoding="async" />
-          <div><h3>Aulas particulares</h3><p className="private-lessons-summary">Se o capital tempo for o seu maior ativo, as aulas particulares são a sua melhor opção.</p><Link href="/aulas-particulares" aria-label="Saiba mais sobre aulas particulares">Saiba mais sobre o serviço</Link></div>
+          <div><h3>Aulas particulares</h3><p className="private-lessons-summary">Seu tempo vale muito, as aulas particulares foram pensadas para aproveitá-lo ao máximo.</p><Link href="/aulas-particulares" aria-label="Saiba mais sobre aulas particulares">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/aulas" aria-label="Abrir serviço de aulas em grupo" />
@@ -109,7 +109,7 @@ export default function Home() {
     </section>
 
 
-    <section className="home-testimonials" id="depoimentos" aria-labelledby="home-testimonials-title"><div className="home-testimonial-layout"><div className="home-testimonial-copy"><div className="v4-section-heading"><p>Depoimentos</p><h2 id="home-testimonials-title"><span className="testimonial-title-line">Quem dança</span><span className="testimonial-title-line">também <span className="testimonial-title-quote">“conta”</span></span></h2><span>Relatos de alunos que encontraram na No Ritmo muito mais do que aulas de dança. São experiências de aprendizagem, superação, acolhimento e novas amizades.</span><a className="google-review-button" href="https://www.google.com/maps?cid=11367344094392465475" target="_blank" rel="noopener noreferrer"><FaGoogle aria-hidden="true" />Deixe sua avaliação no Google</a></div></div><TestimonialRotator /></div></section>
+    <section className="home-testimonials" id="depoimentos" aria-labelledby="home-testimonials-title"><div className="home-testimonial-layout"><div className="home-testimonial-copy"><div className="v4-section-heading"><p>Depoimentos</p><h2 id="home-testimonials-title"><span className="testimonial-title-line">Quem dança</span><span className="testimonial-title-line">também <span className="testimonial-title-quote">“conta”</span>.</span></h2><span>Relatos de alunos que encontraram na No Ritmo muito mais do que aulas de dança. São experiências de aprendizagem, superação, acolhimento e novas amizades.</span><a className="google-review-button" href="https://www.google.com/maps?cid=11367344094392465475" target="_blank" rel="noopener noreferrer"><FaGoogle aria-hidden="true" />Deixe sua avaliação no Google</a></div></div><TestimonialRotator /></div></section>
 
     <section className="home-events" id="projetos" aria-labelledby="home-projects-title"><div className="v4-section-heading"><p>Projetos e comunidade</p><h2 id="home-projects-title">A dança continua fora da sala.</h2><Link className="section-action" href="/projetos">Conheça nossos projetos</Link></div><ProjectCards /></section>
 
@@ -119,7 +119,7 @@ export default function Home() {
     </section>
 
     <section className="home-practical home-schedule-section" id="horarios" aria-labelledby="home-schedule-section-title">
-      <div className="v4-section-heading"><p>Aulas em turma</p><h2 id="home-schedule-section-title">Programação Semanal de Aulas em Turma</h2><Link className="button schedule-action" href="/contato">Agende sua aula</Link></div>
+      <div className="v4-section-heading"><p>Aulas em turma</p><h2 id="home-schedule-section-title">Programação Semanal de Aulas em Turma.</h2><Link className="button schedule-action" href="/contato">Agende sua aula</Link></div>
       <article className="home-schedule" aria-labelledby="home-schedule-section-title">{weeklySchedule.filter((day) => day.sessions.length).map((day) => <div key={day.day}><span className="home-schedule-day-label"><strong>{day.day}</strong><small>{day.teacher}</small></span><span>{day.sessions.map((session) => <span key={`${day.day}-${session.level}`}><b>{session.level}</b>: {session.time}</span>)}</span></div>)}</article>
     </section>
 

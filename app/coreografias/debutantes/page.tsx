@@ -14,29 +14,25 @@ export const metadata: Metadata = {
 const debutanteSections = [
   {
     number: "01",
-    title: "Uma noite de 15 anos merece uma coreografia preparada sem pressa",
+    title: "Uma noite de 15 anos merece uma coreografia preparada sem pressa.",
     content: <>
       <p>A festa de 15 anos marca uma fase única na vida da debutante e de sua família. E, entre tantos momentos especiais dessa celebração, a dança costuma ocupar um lugar de destaque: seja na tradicional valsa com o pai, em uma dança com familiares ou em uma coreografia especial preparada com amigos.</p>
-      <p>Por isso, <strong>na Academia No Ritmo</strong>, recomendamos que a preparação das coreografias comece com antecedência, sempre que possível, <strong>cerca de 6 meses antes da festa</strong>.</p>
+      <p>Por isso, <strong>na Academia No Ritmo</strong>, recomendamos que a preparação das coreografias comece com antecedência, sempre que possível, <strong>cerca de 6 meses antes da festa já seria interessante fazer uma entrevista com um de nossos professores</strong>.</p>
       <p>Não porque seja necessário passar meses ensaiando intensamente, mas porque <strong>ter tempo permite que tudo aconteça com muito mais tranquilidade</strong>.</p>
     </>,
   },
   {
     number: "02",
-    title: "Quanto mais a festa se aproxima, maior é a correria",
+    title: "Quanto mais a festa se aproxima, maior é a correria.",
     content: <>
-      <p>Nos últimos meses antes dos 15 anos, a quantidade de compromissos tende a aumentar.</p>
-      <p>Vestido, decoração, fotografia e filmagem, convites, confirmação de convidados, cabelo, maquiagem, cerimonial, fornecedores, escolha das músicas, últimos ajustes da festa - tudo começa a exigir atenção ao mesmo tempo.</p>
-      <p>Para a debutante, ainda existe a rotina normal: escola, estudos, família, amigos e outros compromissos.</p>
-      <p>E essa correria não envolve somente ela.</p>
-      <p><strong>Pai e mãe também estão diretamente envolvidos na organização</strong>, tomando decisões, resolvendo detalhes e acompanhando fornecedores.</p>
-      <p>Deixar a montagem coreográfica para esse período significa acrescentar mais um compromisso justamente quando a agenda da família está mais apertada.</p>
-      <p>Quando começamos antes, fazemos exatamente o contrário: <strong>tiramos uma preocupação do período mais corrido.</strong></p>
+      <p>Nas semanas antes dos 15 anos, tudo acontece ao mesmo tempo; vestido, decoração, foto e filmagem, convites, cabelo, maquiagem, cerimonial, músicas e ajustes finais. Tudo isso somado à rotina de escola, estudos, amigos e às festas das amigas.</p>
+      <p>E a correria não é só da debutante, pai e mãe também estão no meio das decisões.</p>
+      <p>Deixar a coreografia para essa fase é somar mais um compromisso quando a agenda está mais apertada. <strong>Começando antes, fazemos o contrário, tiramos uma preocupação do período mais corrido.</strong></p>
     </>,
   },
   {
     number: "03",
-    title: "A coreografia pode ser construída com calma",
+    title: "A coreografia pode ser construída com calma.",
     content: <>
       <p>Com antecedência, existe tempo para conhecer a debutante, entender suas preferências, escolher músicas, experimentar ideias e construir uma apresentação que realmente tenha a personalidade dela.</p>
       <p>A coreografia não precisa ser simplesmente bonita.</p>
@@ -47,7 +43,7 @@ const debutanteSections = [
   },
   {
     number: "04",
-    title: "Mais tempo significa mais segurança e naturalidade",
+    title: "Mais tempo significa mais segurança e naturalidade.",
     content: <>
       <p>Existe uma grande diferença entre <strong>decorar uma coreografia</strong> e realmente <strong>sentir-se confortável dançando-a</strong>.</p>
       <p>Quando há tempo, os movimentos são assimilados aos poucos. A debutante ganha segurança, expressão e confiança, e aquilo que inicialmente exigia muita concentração começa a acontecer de maneira muito mais natural.</p>
@@ -57,7 +53,7 @@ const debutanteSections = [
   },
   {
     number: "05",
-    title: "E os ensaios também passam a fazer parte das lembranças",
+    title: "E os ensaios também passam a fazer parte das lembranças.",
     content: <>
       <p>Há algo especialmente bonito na preparação de uma festa de 15 anos: <strong>a experiência começa muito antes da noite da comemoração.</strong></p>
       <p>Os ensaios com o pai podem se transformar em momentos especiais entre pai e filha.</p>
@@ -69,7 +65,7 @@ const debutanteSections = [
   },
   {
     number: "06",
-    title: "Se a festa está a seis meses, este pode ser o melhor momento para começar",
+    title: "Se a festa está a seis meses, este pode ser o melhor momento para começar.",
     content: <>
       <p>Começar cedo não significa ensaiar mais.</p>
       <p>Significa <strong>ensaiar melhor e com menos pressão</strong>.</p>

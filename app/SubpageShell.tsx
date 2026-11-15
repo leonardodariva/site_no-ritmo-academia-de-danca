@@ -19,7 +19,7 @@ type Section = {
   titleAddon?: ReactNode;
 };
 
-export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, ctaTitle, ctaIntro, breadcrumbParent, heroImage, breadcrumbCurrentLabel }: { kicker: string; title: string; intro: string; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string }; heroImage?: string; breadcrumbCurrentLabel?: string }) {
+export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, ctaTitle, ctaIntro, breadcrumbParent, heroImage, breadcrumbCurrentLabel }: { kicker: string; title: string; intro: ReactNode; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string }; heroImage?: string; breadcrumbCurrentLabel?: string }) {
   return (
     <main className="subpage">
       <SiteHeader />
