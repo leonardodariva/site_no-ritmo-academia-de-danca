@@ -115,7 +115,7 @@ export default function Home() {
 
     <section className="gallery home-gallery" id="galeria" aria-labelledby="home-gallery-title">
       <div className="gallery-heading-row"><div className="gallery-heading"><p>Galeria</p><h2 id="home-gallery-title">Momentos em movimento.</h2><p>Entre no clima da No Ritmo: sorrisos, novos passos e encontros que dão vontade de viver tudo de novo.</p></div><Link className="button gallery-all-button" href="/galeria">Ver todos os álbuns</Link></div>
-      <div className="gallery-grid">{galleryAlbums.slice(0, 3).map((album, index) => <Link className={"gallery-item home-album" + (index === 0 ? " gallery-large" : "")} href={"/galeria/" + album.slug} key={album.slug}><img src={album.photos[0].src} alt={album.photos[0].alt} width="1536" height="1024" loading="lazy" decoding="async" /><div className="home-album-copy"><small>{album.category} · {album.photos.length} fotos</small><h3>{album.title}</h3><span>Ver álbum</span></div></Link>)}</div>
+      <div className="gallery-grid">{galleryAlbums.slice(0, 3).map((album, index) => <Link className={"gallery-item home-album" + (index === 0 ? " gallery-large" : "")} href={"/galeria/" + album.slug} key={album.slug}><img src={album.photos[0].src} alt={album.photos[0].alt} width="1536" height="1024" loading="lazy" decoding="async" /><div className="home-album-copy"><small>{album.category} · {album.photos.length} {album.photos.length === 1 ? "foto" : "fotos"}</small><h3>{album.title}</h3><span>Ver álbum</span></div></Link>)}</div>
     </section>
 
     <section className="home-practical home-schedule-section" id="horarios" aria-labelledby="home-schedule-section-title">

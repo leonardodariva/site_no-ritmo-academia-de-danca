@@ -1,7 +1,7 @@
 export type DanceStyle = {
   slug: string;
   name: string;
-  paragraphs: string[];
+  paragraphs: (string | { before: string; strong: string; after: string })[];
 };
 
 export const danceStyles: DanceStyle[] = [
@@ -42,7 +42,12 @@ export const danceStyles: DanceStyle[] = [
     "name": "Sertanejo",
     "paragraphs": [
       "A dança Sertaneja acompanha as transformações da própria música sertaneja brasileira. Com a expansão do gênero e o surgimento de novas vertentes, diferentes maneiras de dançar a dois também foram se desenvolvendo nos bailes, festas e casas noturnas.",
-      "É uma dança social versátil, marcada pela condução, giros, deslocamentos e interação entre os parceiros. Sua proximidade com um repertório amplamente conhecido pelo público brasileiro faz dela uma excelente opção para quem deseja levar a dança para situações sociais do cotidiano."
+      "É uma dança social versátil, marcada pela condução, giros, deslocamentos e interação entre os parceiros. Sua proximidade com um repertório amplamente conhecido pelo público brasileiro faz dela uma excelente opção para quem deseja levar a dança para situações sociais do cotidiano.",
+      {
+        "before": "Uma característica curiosa, o Sertanejo não é dançado da mesma forma em todo o país. Em São Paulo, no Rio de Janeiro e em outras regiões, cada lugar desenvolveu seu próprio jeito de dançar. ",
+        "strong": "Na Academia No Ritmo, ensinamos o Sertanejo como ele é mais dançado aqui no Norte do Paraná",
+        "after": ", para que você se sinta em casa nos bailes e festas da nossa região."
+      }
     ]
   },
   {
@@ -105,7 +110,7 @@ export const danceStyles: DanceStyle[] = [
     "slug": "soltinho",
     "name": "Soltinho",
     "paragraphs": [
-      "O Soltinho é uma dança social brasileira desenvolvida a partir da maneira como brasileiros passaram a interpretar músicas de diferentes gêneros dançados a dois, especialmente aquelas relacionadas ao rock, swing e outros ritmos.",
+      "O Soltinho é uma dança social brasileira desenvolvida a partir da maneira como brasileiros passaram a interpretar músicas de diferentes gêneros dançados a dois, especialmente aquelas relacionadas ao rock, swing e outros estilos.",
       "Caracteriza-se pela descontração, giros, trocas de posição e grande variedade musical. É justamente essa versatilidade que faz do soltinho uma dança muito divertida para situações sociais."
     ]
   },

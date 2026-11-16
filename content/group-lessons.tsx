@@ -97,7 +97,7 @@ export const groupLessonSections = [
       <p>Pode achar que não tem ritmo.</p>
       <p>Pode estar procurando uma atividade física, um novo hobby, uma oportunidade de conhecer pessoas ou simplesmente realizar aquela vontade antiga de aprender a dançar.</p>
       <p><strong>O importante é começar.</strong></p>
-      <h3>Aprenda novos ritmos.</h3>
+      <h3>Aprenda novos estilos de dança.</h3>
       <h3>Dance com diferentes pessoas.</h3>
       <h3>Faça parte de uma comunidade.</h3>
       <h3>Viva a experiência da dança social.</h3>

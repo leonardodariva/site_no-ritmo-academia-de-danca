@@ -9,6 +9,24 @@ const images = [
 export type GalleryPhoto = { src: string; alt: string };
 export type GalleryAlbum = { slug: string; title: string; category: string; description: string; photos: GalleryPhoto[] };
 
+const aulasEEncontrosPhotos: GalleryPhoto[] = [
+  { src: "/images/galeria/aulas-e-encontros-dsc02095.webp", alt: "Turma reunida em uma aula de dança no salão" },
+  { src: "/images/galeria/aulas-e-encontros-dsc05534.webp", alt: "Casal praticando um giro durante a aula de dança" },
+  { src: "/images/galeria/aulas-e-encontros-dsc02165.webp", alt: "Casal dançando junto durante um encontro" },
+  { src: "/images/galeria/aulas-e-encontros-dsc02239.webp", alt: "Aluno praticando dança de salão com uma parceira" },
+  { src: "/images/galeria/aulas-e-encontros-dsc03022.webp", alt: "Participantes acompanhando uma aula de dança em grupo" },
+  { src: "/images/galeria/aulas-e-encontros-dsc03075.webp", alt: "Casal treinando um movimento de dança de salão" },
+  { src: "/images/galeria/aulas-e-encontros-dsc03336.webp", alt: "Casal praticando a condução em uma aula" },
+  { src: "/images/galeria/aulas-e-encontros-dsc04225.webp", alt: "Professor orientando uma aluna durante a prática de dança" },
+  { src: "/images/galeria/aulas-e-encontros-dsc05509.webp", alt: "Duas alunas praticando um movimento juntas" },
+  { src: "/images/galeria/aulas-e-encontros-dsc07181.webp", alt: "Casal dançando durante um encontro da turma" },
+  { src: "/images/galeria/aulas-e-encontros-dsc05581.webp", alt: "Aluno acompanhando uma aula de dança em grupo" },
+  { src: "/images/galeria/aulas-e-encontros-dsc05558.webp", alt: "Dupla conversando durante uma prática de dança" },
+  { src: "/images/galeria/aulas-e-encontros-dsc05645.webp", alt: "Grupo reunido no salão para uma aula de dança" },
+  { src: "/images/galeria/aulas-e-encontros-dsc05751.webp", alt: "Duas alunas praticando dança de salão juntas" },
+  { src: "/images/galeria/aulas-e-encontros-dsc07161.webp", alt: "Casal dançando junto no salão" },
+];
+
 export const galleryAlbums = [
   { slug: "aulas-e-encontros", title: "Aulas e encontros", category: "Aulas", description: "Aprender novos passos, encontrar pessoas e descobrir o prazer de dançar juntos.", order: [0, 1, 2, 3, 4] },
   { slug: "pratica-de-danca", title: "Prática de dança", category: "Festas", description: "Um convite para experimentar os passos e aproveitar a dança em boa companhia.", order: [4, 3, 0, 2, 1] },
@@ -18,6 +36,8 @@ export const galleryAlbums = [
 
   if (album.slug === "aulas-e-encontros") {
     photos[0] = { src: "/images/galeria/aulas-e-encontros-banner.webp", alt: "Alunos praticando dança de salão em aula" };
+    photos.splice(1);
+    photos.push(...aulasEEncontrosPhotos);
   }
 
   if (album.slug === "pratica-de-danca") {

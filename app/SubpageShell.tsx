@@ -19,7 +19,7 @@ type Section = {
   titleAddon?: ReactNode;
 };
 
-export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, ctaTitle, ctaIntro, breadcrumbParent, heroImage, breadcrumbCurrentLabel }: { kicker: string; title: string; intro: ReactNode; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string }; heroImage?: string; breadcrumbCurrentLabel?: string }) {
+export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, hideCta = false, ctaTitle, ctaIntro, breadcrumbParent, heroImage, breadcrumbCurrentLabel }: { kicker: string; title: string; intro: ReactNode; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; hideCta?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string }; heroImage?: string; breadcrumbCurrentLabel?: string }) {
   return (
     <main className="subpage">
       <SiteHeader />
@@ -33,7 +33,7 @@ export default function SubpageShell({ kicker, title, intro, sections, wideCopy 
           return <article key={section.number} id={section.id} className={section.fullWidth ? "subpage-section-full" : undefined}><div className="subpage-section-title"><h2>{section.title}</h2>{section.titleAddon}</div><div className="subpage-section-copy">{section.content}{paragraphs.map((paragraph, index) => <p key={`${section.number}-${index}`}>{paragraph}</p>)}{section.quote && <blockquote>{section.quote}</blockquote>}{section.closing && <p className="subpage-section-closing">{section.closing}</p>}</div></article>;
         })}
       </section>
-      <section className={wideCopy ? "subpage-cta subpage-cta-about" : "subpage-cta"}><p>{ctaIntro ?? "Fale diretamente com a equipe"}</p><h2>{ctaTitle ?? (wideCopy ? "Para dar o seu primeiro passo na dança de salão, clique no botão abaixo." : "Vamos encontrar a melhor experiência para você?")}</h2><a className="button subpage-cta-whatsapp" href={siteContact.whatsappHref} target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" />Conversar no WhatsApp</a></section>
+      {!hideCta && <section className={wideCopy ? "subpage-cta subpage-cta-about" : "subpage-cta"}><p>{ctaIntro ?? "Fale diretamente com a equipe"}</p><h2>{ctaTitle ?? (wideCopy ? "Para dar o seu primeiro passo na dança de salão, clique no botão abaixo." : "Vamos encontrar a melhor experiência para você?")}</h2><a className="button subpage-cta-whatsapp" href={siteContact.whatsappHref} target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" />Conversar no WhatsApp</a></section>}
       <SiteFooter />
       <a className="whatsapp-float" href={siteContact.whatsappGeneralHref} target="_blank" rel="noreferrer" aria-label="Conversar com a No Ritmo pelo WhatsApp"><span className="whatsapp-icon" aria-hidden="true"><FaWhatsapp /></span><span className="whatsapp-label"><strong>Conversar</strong><small>com a equipe</small></span></a>
     </main>

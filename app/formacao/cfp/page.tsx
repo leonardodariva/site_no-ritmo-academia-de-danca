@@ -1,12 +1,57 @@
 import type { Metadata } from "next";
+import { FaWhatsapp } from "react-icons/fa";
+import { siteContact } from "../../../content/site";
 import SubpageShell from "../../SubpageShell";
 
 export const metadata: Metadata = { title: "CFP - Curso de Formação de Professores em Dança de Salão | No Ritmo", description: "Conhecimento para dançar, método para ensinar e autonomia para continuar aprendendo.", alternates: { canonical: "/formacao/cfp" }, openGraph: { title: "CFP - Curso de Formação de Professores em Dança de Salão | No Ritmo", description: "Conhecimento para dançar, método para ensinar e autonomia para continuar aprendendo.", url: "/formacao/cfp", images: ["/images/editorial/formacao-em-grupo.webp"] } };
 
-export default function CfpPage() { return <SubpageShell compactHero wideCopy heroImage="/images/servicos/cfp.webp" breadcrumbParent={{ label: "Serviços", href: "/servicos" }} kicker="Curso de formação" title="CFP - Curso de Formação de Professores em Dança de Salão" intro="Conhecimento para dançar, método para ensinar e autonomia para continuar aprendendo." sections={[
-  { number: "01", title: "Saber dançar é uma coisa. Saber ensinar alguém a dançar é outra.", paragraphs: ["O CFP - Curso de Formação de Professores da No Ritmo é uma formação voltada para quem deseja compreender a dança de salão para além dos passos e desenvolver conhecimentos para atuar profissionalmente com o seu ensino.", <strong key="cfp-history">Desde 2017, o CFP acontece nesses mesmos moldes na No Ritmo, integrando conhecimentos técnicos, pedagógicos e humanos à formação profissional em dança de salão.</strong>, "A proposta nasceu da percepção de que um bom professor não é necessariamente aquele que possui o maior repertório de movimentos, mas aquele que consegue transformar conhecimento em aprendizagem.", "Por isso, desde suas primeiras edições, o CFP reúne conhecimentos de diferentes áreas aplicados à dança de salão, abordando conteúdos como didática, andragogia, cinesiologia, comunicação verbal e não verbal, análise comportamental, musicalidade, universo rítmico, oratória, empreendedorismo e marketing pessoal, além do estudo técnico dos principais estilos de dança.", "Com o passar dos anos e a evolução da metodologia No Ritmo, a formação ganhou ainda mais profundidade.", "Hoje, o participante também é levado a compreender aspectos relacionados à fisiologia, percepção corporal, sistemas representacionais, canais perceptivos, escuta ativa, leitura de sala, comunicação, condução, segurança, prevenção de lesões e diferentes processos de ensino e aprendizagem."] },
-  { number: "02", title: "Não ensinamos apenas o que fazer. Ensinamos a compreender.", paragraphs: ["Durante o CFP, cada conhecimento técnico é acompanhado de perguntas fundamentais: o que estou fazendo? Por que esse movimento funciona? Como posso explicá-lo? Como diferentes pessoas podem compreendê-lo? E como posso identificar se realmente houve aprendizagem?", "Essa forma de pensar transforma a relação do futuro professor com a dança.", "Em vez de simplesmente reproduzir aquilo que aprendeu, ele começa a desenvolver capacidade de observar, analisar, experimentar, adaptar e construir estratégias de ensino de acordo com as necessidades de cada aluno."], quote: "Se não houve aprendizagem, é porque não houve ensino." },
-  { number: "03", title: "Aprender a aprender.", paragraphs: ["Outro pilar fundamental do CFP é o desenvolvimento da autonomia.", "Acreditamos que uma formação profissional não deve criar professores dependentes de sequências prontas ou de um único método de explicação. Por isso, estimulamos aquilo que chamamos de “aprender a aprender”.", "O participante é incentivado a pesquisar, questionar, observar, testar, compreender fundamentos e construir conhecimento continuamente.", "Porque a formação de um professor não termina quando termina um curso."] },
-  { number: "04", title: "Teoria que encontra a prática.", paragraphs: ["O CFP aproxima o conhecimento teórico das situações reais encontradas dentro de uma sala de aula.", "O participante desenvolve sua capacidade de observar diferentes corpos, dificuldades, ritmos de aprendizagem e formas de comunicação, entendendo que pessoas diferentes podem precisar de caminhos diferentes para chegar ao mesmo aprendizado.", "Nesse processo, técnica e conhecimento caminham junto com comunicação, acolhimento, responsabilidade, liderança e desenvolvimento humano."] },
-  { number: "05", title: "Uma formação para quem deseja ir além da dança.", paragraphs: ["O CFP não foi criado apenas para formar pessoas que saibam demonstrar movimentos.", "Foi criado para desenvolver profissionais capazes de compreender a dança, compreender o aluno e compreender o processo que conecta os dois.", "Porque ensinar dança de salão envolve muito mais do que passos.", "Envolve pessoas."], closing: "CFP No Ritmo - Conhecimento para dançar. Método para ensinar. Autonomia para continuar aprendendo." },
+export default function CfpPage() { return <SubpageShell compactHero wideCopy hideCta heroImage="/images/servicos/cfp.webp" breadcrumbParent={{ label: "Serviços", href: "/servicos" }} kicker="Curso de formação" title="CFP - Curso de Formação de Professores em Dança de Salão" intro="Conhecimento para dançar, método para ensinar e autonomia para continuar aprendendo." sections={[
+  { number: "01", title: "Saber dançar é uma coisa. Saber ensinar alguém a dançar é outra.", content: <>
+    <p>O CFP é a formação da No Ritmo para quem quer compreender a dança de salão para além dos passos e atuar profissionalmente com o seu ensino.</p>
+    <p>Desde 2017, o curso parte de uma convicção: um bom professor não é quem conhece mais movimentos, mas quem consegue transformar conhecimento em aprendizagem.</p>
+    <p>Por isso, a formação integra conhecimentos de diferentes áreas aplicados à dança de salão:</p>
+    <ul>
+      <li><strong>Pedagogia</strong> - didática, andragogia e processos de ensino e aprendizagem</li>
+      <li><strong>Corpo</strong> - cinesiologia, fisiologia, percepção corporal, segurança e prevenção de lesões</li>
+      <li><strong>Comunicação</strong> - verbal e não verbal, oratória, escuta ativa, leitura de sala, sistemas representacionais, análise comportamental básica e canais perceptivos</li>
+      <li><strong>Música</strong> - musicalidade e universo rítmico</li>
+      <li><strong>Dança</strong> - condução e estudo técnico dos principais estilos de dança</li>
+      <li><strong>Carreira</strong> - empreendedorismo e marketing pessoal, gestão.</li>
+    </ul>
+  </> },
+  { number: "02", title: "Como funciona a formação.", content: <>
+    <p>O CFP tem duração aproximada de dois anos, do primeiro fundamento até o momento em que você assume uma turma com segurança.</p>
+    <ul>
+      <li><strong>Aulas e estudo</strong> - teoria e prática integradas ao longo de toda a formação.</li>
+      <li><strong>50 videoaulas detalhadas</strong> - a forma e a função de cada elemento, para revisar quando quiser.</li>
+      <li><strong>Estágio totalmente supervisionado</strong> - você não assume uma turma sozinho antes de estar pronto.</li>
+    </ul>
+  </> },
+  { number: "03", title: "Quatro estilos de dança como base.", paragraphs: [
+    <>A No Ritmo ensina mais de 20 estilos de dança, mas a formação se concentra em quatro - <strong>Arrasta-pé, Sertanejo, Vaneira e Forró</strong>.</>,
+    "São os mais procurados na nossa região e a base de quem deseja construir uma carreira sólida, ou um negócio sustentável com a dança de salão.",
+  ] },
+  { number: "04", title: "Não ensinamos apenas o que fazer. Ensinamos a compreender.", content: <>
+    <p>Por que um movimento funciona? Por que um aluno não consegue executá-lo? Como saber se ele realmente aprendeu?</p>
+    <p>No CFP, o participante é levado a fazer essas perguntas e a buscar respostas. Porque ensinar não é repetir uma sequência, é entender o que acontece entre quem ensina e quem aprende.</p>
+    <blockquote style={{ fontWeight: 400, fontStyle: "italic" }}>“Se não houve aprendizagem, é porque não houve ensino.”</blockquote>
+  </> },
+  { number: "05", title: "Aprender a aprender", paragraphs: ["Não entregamos um método fechado ou sequências prontas. Formamos professores capazes de pesquisar, questionar, testar e continuar evoluindo, muito depois de concluir o curso."] },
+  { number: "06", title: "Teoria que encontra a prática.", paragraphs: [
+    "Cada conteúdo ganha sentido na sala de aula, diante de corpos diferentes, ritmos de aprendizagem diferentes e formas diferentes de se comunicar.",
+    "Ao longo da formação, o conhecimento técnico caminha junto com valores que definem um bom professor, cuidado, responsabilidade e liderança.",
+  ] },
+  { number: "07", title: "Para quem é o CFP?", paragraphs: [
+    "O CFP é para quem já dança e também para quem ainda não dança. A experiência anterior ajuda, mas não é o que define quem está pronto para começar.",
+    "O que realmente importa é o propósito. Esta é uma formação para quem entende que ensinar dança é cuidar de pessoas e que decide entrar com compromisso, curiosidade e vontade de fazer diferença na vida de quem vai aprender.",
+    <strong key="cfp-purpose">Não é preciso saber dançar. É preciso saber por que você quer ensinar.</strong>,
+  ] },
+  { number: "08", title: "Uma formação para quem deseja ir além da dança", paragraphs: [
+    "O CFP prepara profissionais para compreender a dança, o aluno e o processo que conecta os dois.",
+    "Porque ensinar dança de salão envolve técnica. Envolve método. Mas, acima de tudo, envolve pessoas.",
+  ] },
+  { number: "09", title: "Quer saber se o CFP é para você?", content: <>
+    <p>Fale diretamente com a nossa equipe, vamos conversar sobre a formação, as próximas turmas e/ou como começar agora mesmo.</p>
+    <a className="button subpage-cta-whatsapp" href={siteContact.whatsappHref} target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" />Conversar no WhatsApp</a>
+  </> },
 ]} />; }
