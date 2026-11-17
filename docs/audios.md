@@ -19,7 +19,13 @@ Integração de 17/11/2026: 108 gravações completas com a voz Luciano, em 14 p
 | Contato | `/contato` | 5 |
 | Projeto de dança de salão gratuita | `/projetos/danca-de-salao-gratuita-apucarana` | 4 |
 
-As páginas de coreografias para debutantes (incluindo 15 anos), casamentos e gincanas permanecem reservadas para outras vozes. Elas não têm arquivos de Luciano vinculados e continuam com a leitura do navegador disponível.
+As páginas de coreografias têm outras 21 gravações completas, geradas no ElevenLabs:
+
+| Página | Rota | Voz | Blocos |
+| --- | --- | --- | ---: |
+| Casamentos | `/coreografias/casamentos` | Bruna Costa | 7 |
+| Debutantes e 15 anos | `/coreografias/debutantes` | Viviane Mayra | 6 |
+| Gincanas | `/coreografias/gincanas` | Viviane Mayra | 8 |
 
 ## Manutenção
 
