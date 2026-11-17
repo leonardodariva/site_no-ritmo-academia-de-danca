@@ -77,7 +77,7 @@ test("sobre e FAQ usam conteúdo consolidado sem placeholders", async () => {
 
   const faqHtml = await (await render("/faq")).text();
   assert.match(faqHtml, /O que é dança de salão\?/);
-  assert.match(faqHtml, /dança de salão é tudo o que se dança a dois/i);
+  assert.match(faqHtml, /conjunto de danças sociais feitas a dois/i);
 });
 
 test("home apresenta os três caminhos e a rede editorial da V4", async () => {

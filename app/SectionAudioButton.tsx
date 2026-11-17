@@ -140,6 +140,8 @@ export default function SectionAudioButton({ sectionKey, title }: { sectionKey: 
     <button
       type="button"
       className={`section-audio-button${playing ? " is-playing" : ""}`}
+      data-audio-key={audioKey}
+      data-audio-src={audioSrc}
       onClick={handleClick}
       aria-label={playing ? `Parar leitura de ${title}` : `Ouvir o bloco ${title}`}
       aria-pressed={playing}
