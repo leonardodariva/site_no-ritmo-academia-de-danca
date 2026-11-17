@@ -5,11 +5,8 @@
  * Exemplo: "/sobre#01": "/audio/sobre/01.mp3"
  * Enquanto não houver arquivo cadastrado, o botão usa a voz do navegador.
  *
- * Voz definida para as próximas narrações: Luciano. Exceções:
- * - /coreografias/debutantes (inclui a festa de 15 anos): voz a definir;
- * - /coreografias/casamentos: Bruna Costa - Suave, Aveludado, aguardando aprovação;
- * - /coreografias/gincanas: voz a definir.
- * A página /coreografias/eventos usa Luciano.
+ * Casamentos usa Bruna Costa. Debutantes (15 anos) e gincanas usam
+ * Viviane Mayra. As demais gravações usam Luciano.
  */
 export const sectionAudioSources: Record<string, string> = {
   "/sobre#01": "/audio/sobre/01-luciano.mp3",
@@ -102,6 +99,13 @@ export const sectionAudioSources: Record<string, string> = {
   "/coreografias/eventos#05": "/audio/coreografias/eventos/05-luciano.mp3",
   "/coreografias/eventos#06": "/audio/coreografias-eventos/grupos-grandes-luciano.mp3",
   "/coreografias/eventos#07": "/audio/coreografias-eventos/conversa-inicial-luciano.mp3",
+  "/coreografias/casamentos#01": "/audio/coreografias/casamentos/01-bruna.mp3",
+  "/coreografias/casamentos#02": "/audio/coreografias/casamentos/02-bruna.mp3",
+  "/coreografias/casamentos#03": "/audio/coreografias/casamentos/03-bruna.mp3",
+  "/coreografias/casamentos#04": "/audio/coreografias/casamentos/04-bruna.mp3",
+  "/coreografias/casamentos#05": "/audio/coreografias/casamentos/05-bruna.mp3",
+  "/coreografias/casamentos#06": "/audio/coreografias/casamentos/06-bruna.mp3",
+  "/coreografias/casamentos#07": "/audio/coreografias/casamentos/07-bruna.mp3",
   "/faq#01": "/audio/faq/01-luciano.mp3",
   "/faq#02": "/audio/faq/02-luciano.mp3",
   "/faq#03": "/audio/faq/03-luciano.mp3",
