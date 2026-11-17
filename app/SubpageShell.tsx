@@ -5,6 +5,7 @@ import { House } from "lucide-react";
 import { siteContact } from "../content/site";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
+import SectionAudioButton from "./SectionAudioButton";
 
 type Section = {
   number: string;
@@ -17,6 +18,8 @@ type Section = {
   id?: string;
   fullWidth?: boolean;
   titleAddon?: ReactNode;
+  audio?: boolean;
+  audioId?: string;
 };
 
 export default function SubpageShell({ kicker, title, intro, sections, wideCopy = false, compactHero = false, hideHeroSummary = false, hideCta = false, ctaTitle, ctaIntro, breadcrumbParent, heroImage, breadcrumbCurrentLabel }: { kicker: string; title: string; intro: ReactNode; sections: Section[]; wideCopy?: boolean; compactHero?: boolean; hideHeroSummary?: boolean; hideCta?: boolean; ctaTitle?: string; ctaIntro?: string; breadcrumbParent?: { label: string; href: string }; heroImage?: string; breadcrumbCurrentLabel?: string }) {
@@ -30,7 +33,8 @@ export default function SubpageShell({ kicker, title, intro, sections, wideCopy 
       <section className={wideCopy ? "subpage-sections subpage-sections-wide" : "subpage-sections"}>
         {sections.map((section) => {
           const paragraphs = section.paragraphs ?? (section.text ? [section.text] : []);
-          return <article key={section.number} id={section.id} className={section.fullWidth ? "subpage-section-full" : undefined}><div className="subpage-section-title"><h2>{section.title}</h2>{section.titleAddon}</div><div className="subpage-section-copy">{section.content}{paragraphs.map((paragraph, index) => <p key={`${section.number}-${index}`}>{paragraph}</p>)}{section.quote && <blockquote>{section.quote}</blockquote>}{section.closing && <p className="subpage-section-closing">{section.closing}</p>}</div></article>;
+          const hasReadableText = !section.fullWidth || Boolean(section.text || section.paragraphs?.length || section.quote || section.closing);
+          return <article key={section.number} id={section.id} className={section.fullWidth ? "subpage-section-full" : undefined}><div className="subpage-section-title"><h2>{section.title}</h2>{section.audio !== false && hasReadableText && <SectionAudioButton sectionKey={section.audioId ?? section.id ?? section.number} title={section.title} />}{section.titleAddon}</div><div className="subpage-section-copy">{section.content}{paragraphs.map((paragraph, index) => <p key={`${section.number}-${index}`}>{paragraph}</p>)}{section.quote && <blockquote>{section.quote}</blockquote>}{section.closing && <p className="subpage-section-closing">{section.closing}</p>}</div></article>;
         })}
       </section>
       {!hideCta && <section className={wideCopy ? "subpage-cta subpage-cta-about" : "subpage-cta"}><p>{ctaIntro ?? "Fale diretamente com a equipe"}</p><h2>{ctaTitle ?? (wideCopy ? "Para dar o seu primeiro passo na dança de salão, clique no botão abaixo." : "Vamos encontrar a melhor experiência para você?")}</h2><a className="button subpage-cta-whatsapp" href={siteContact.whatsappHref} target="_blank" rel="noreferrer"><FaWhatsapp aria-hidden="true" />Conversar no WhatsApp</a></section>}

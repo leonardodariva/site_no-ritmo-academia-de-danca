@@ -702,6 +702,10 @@ footer { background:#0b0b0f; color:var(--cream); padding:80px 8vw 25px; }.brand-
 
 .subpage-section-copy { gap:16px; }
 
+.section-audio-button { display:inline-flex; align-items:center; justify-content:center; gap:9px; width:max-content; max-width:100%; min-height:42px; margin-top:20px; padding:9px 16px; border:1px solid var(--blue); border-radius:999px; background:transparent; color:var(--blue); font:700 12px "Inter",sans-serif; cursor:pointer; transition:background-color .2s ease,color .2s ease,box-shadow .2s ease; }
+.section-audio-button:hover,.section-audio-button.is-playing { background:var(--blue); color:#fff; box-shadow:0 8px 18px rgba(23,71,158,.15); }
+.section-audio-button:focus-visible { outline:3px solid #9db5ff; outline-offset:3px; }
+
 .project-videos { display:grid; gap:22px; min-width:0; }
 .project-video-choices { display:grid; grid-template-columns:minmax(0,230px); gap:10px; }
 .project-video-choice { display:flex; align-items:center; gap:10px; min-height:76px; padding:18px; border:1px solid var(--line); border-radius:16px; background:#fff; color:var(--ink); cursor:pointer; text-align:left; transition:border-color .2s ease,box-shadow .2s ease; }
