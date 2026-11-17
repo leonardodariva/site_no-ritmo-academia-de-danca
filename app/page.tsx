@@ -19,6 +19,7 @@ export const metadata: Metadata = { title: "No Ritmo Academia de Dança | Apucar
 
 export default function Home() {
   return <main className="v4-home">
+    <link rel="preload" as="image" href="/images/editorial/roda-de-conversa-hero.webp" fetchPriority="high" />
     <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <SiteHeader floating />
 
