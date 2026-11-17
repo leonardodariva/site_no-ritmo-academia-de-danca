@@ -23,7 +23,6 @@ const aulasEEncontrosPhotos: GalleryPhoto[] = [
   { src: "/images/galeria/aulas-e-encontros-dsc05581.webp", alt: "Aluno acompanhando uma aula de dança em grupo" },
   { src: "/images/galeria/aulas-e-encontros-dsc05558.webp", alt: "Dupla conversando durante uma prática de dança" },
   { src: "/images/galeria/aulas-e-encontros-dsc05645.webp", alt: "Grupo reunido no salão para uma aula de dança" },
-  { src: "/images/galeria/aulas-e-encontros-dsc05751.webp", alt: "Duas alunas praticando dança de salão juntas" },
   { src: "/images/galeria/aulas-e-encontros-dsc07161.webp", alt: "Casal dançando junto no salão" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-01.webp", alt: "Casais praticando dança de salão em uma aula no estúdio" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-02.webp", alt: "Participantes acompanhando uma atividade de dança no salão" },
