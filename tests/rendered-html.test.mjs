@@ -49,12 +49,17 @@ test("contato e horários exibem os dados centralizados", async () => {
   const contactHtml = await (await render("/contato")).text();
   assert.match(contactHtml, /\(43\) 99921-6027/);
   assert.match(contactHtml, /noritmo@live\.com/);
+  assert.match(contactHtml, /href="tel:\+5543999216027"/);
+  assert.match(contactHtml, /href="mailto:noritmo@live\.com"/);
+  assert.match(contactHtml, /Enviar e-mail/);
+  assert.doesNotMatch(contactHtml, /data-audio-key="\/contato#/);
+  assert.doesNotMatch(contactHtml, /<h2>Como podemos ajudar\.|<h2>Turmas e horários\./);
   assert.doesNotMatch(contactHtml, /Lorem ipsum/i);
 
   const scheduleHtml = await (await render("/horarios")).text();
   assert.match(scheduleHtml, /Segunda-feira/);
-  assert.match(scheduleHtml, /19h00 - 20h30/);
-  assert.match(scheduleHtml, /22h00/);
+  assert.match(scheduleHtml, /19:00 às 20:30/);
+  assert.match(scheduleHtml, /20:30 às 22:00/);
 });
 
 test("modalidades e aulas apresentam conteúdo útil sem texto de preparação", async () => {

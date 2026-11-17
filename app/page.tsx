@@ -54,7 +54,7 @@ export default function Home() {
         </article>
         <article>
           <Link className="service-card-hitarea" href="/aulas" aria-label="Abrir serviço de aulas em grupo" />
-          <img src="/images/servicos/aulas-em-grupo-card.webp" alt="Turma praticando dança de salão em pares" width="800" height="533" loading="lazy" decoding="async" />
+          <img src="/images/servicos/aulas-em-grupo-dsc05762-card.webp" alt="Alunos reunidos em aula em grupo no estúdio da No Ritmo" width="1200" height="800" loading="lazy" decoding="async" />
           <div><h3>Aulas em grupo</h3><p className="group-lessons-summary">Aprenda a dançar, pratique e conheça pessoas. Você não precisa ter um par.</p><Link href="/aulas" aria-label="Saiba mais sobre aulas em grupo">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>

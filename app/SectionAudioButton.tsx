@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
-import { Square, Volume2 } from "lucide-react";
+import { Pause, Play, Square, Volume2 } from "lucide-react";
 import { sectionAudioSources } from "../content/section-audio";
 
 const audioStartEvent = "no-ritmo-section-audio-start";
@@ -26,6 +26,15 @@ export default function SectionAudioButton({ sectionKey, title }: { sectionKey: 
   const pathname = usePathname();
   const audioKey = `${pathname}#${sectionKey}`;
   const audioSrc = sectionAudioSources[audioKey];
+
+  if (audioSrc) {
+    return <SectionAudioPlayer key={audioKey} audioKey={audioKey} audioSrc={audioSrc} title={title} />;
+  }
+
+  return <SectionAudioReadButton audioKey={audioKey} audioSrc={audioSrc} title={title} />;
+}
+
+function SectionAudioReadButton({ audioKey, audioSrc, title }: { audioKey: string; audioSrc?: string; title: string }) {
   const [playing, setPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const speechActive = useRef(false);
@@ -149,5 +158,134 @@ export default function SectionAudioButton({ sectionKey, title }: { sectionKey: 
       {playing ? <Square size={14} fill="currentColor" aria-hidden="true" /> : <Volume2 size={17} aria-hidden="true" />}
       <span>{playing ? "Parar leitura" : "Ouvir este bloco"}</span>
     </button>
+  );
+}
+
+function formatTime(seconds: number) {
+  const wholeSeconds = Math.floor(seconds);
+  return `${Math.floor(wholeSeconds / 60)}:${String(wholeSeconds % 60).padStart(2, "0")}`;
+}
+
+function SectionAudioPlayer({ audioKey, audioSrc, title }: { audioKey: string; audioSrc: string; title: string }) {
+  const audioRef = useRef<HTMLAudioElement>(null);
+  const playButtonRef = useRef<HTMLButtonElement>(null);
+  const [activated, setActivated] = useState(false);
+  const [playing, setPlaying] = useState(false);
+  const [elapsed, setElapsed] = useState(0);
+  const [duration, setDuration] = useState(0);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    const audio = audioRef.current;
+    const closeForAnotherBlock = (event: Event) => {
+      if ((event as CustomEvent<string>).detail === audioKey) return;
+      if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+      }
+      setActivated(false);
+      setPlaying(false);
+      setElapsed(0);
+      setFailed(false);
+    };
+
+    window.addEventListener(audioStartEvent, closeForAnotherBlock);
+    return () => {
+      window.removeEventListener(audioStartEvent, closeForAnotherBlock);
+      audio?.pause();
+    };
+  }, [audioKey]);
+
+  useEffect(() => {
+    if (activated) playButtonRef.current?.focus({ preventScroll: true });
+  }, [activated]);
+
+  function togglePlayback() {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (!audio.paused) {
+      audio.pause();
+      return;
+    }
+
+    setFailed(false);
+    if (audio.error) audio.load();
+    window.dispatchEvent(new CustomEvent(audioStartEvent, { detail: audioKey }));
+    void audio.play().catch((error: unknown) => {
+      if (!(error instanceof DOMException && error.name === "AbortError")) setFailed(true);
+    });
+  }
+
+  function seek(seconds: number) {
+    const audio = audioRef.current;
+    if (!audio || !duration) return;
+    audio.currentTime = Math.max(0, Math.min(duration, seconds));
+    setElapsed(audio.currentTime);
+  }
+
+  const position = Math.min(elapsed, duration);
+
+  return (
+    <div className="section-audio-player" role="group" aria-label={`Áudio do bloco ${title}`} data-audio-key={audioKey} data-audio-src={audioSrc}>
+      <audio
+        ref={audioRef}
+        src={audioSrc}
+        preload="none"
+        onDurationChange={(event) => {
+          const seconds = event.currentTarget.duration;
+          setDuration(Number.isFinite(seconds) ? seconds : 0);
+        }}
+        onTimeUpdate={(event) => setElapsed(event.currentTarget.currentTime)}
+        onPlay={(event) => {
+          setPlaying(true);
+          setElapsed(event.currentTarget.currentTime);
+        }}
+        onPause={() => setPlaying(false)}
+        onEnded={() => setPlaying(false)}
+        onError={() => { setPlaying(false); setFailed(true); }}
+      />
+      {activated ? (
+        <div className="section-audio-player-controls">
+          <button
+            ref={playButtonRef}
+            type="button"
+            className="section-audio-player-toggle"
+            onClick={togglePlayback}
+            aria-label={playing ? "Pausar narração" : "Reproduzir narração"}
+          >
+            {playing ? <Pause size={18} fill="currentColor" aria-hidden="true" /> : <Play size={18} fill="currentColor" aria-hidden="true" />}
+          </button>
+          <div className="section-audio-player-progress">
+            <input
+              className="section-audio-player-timeline"
+              type="range"
+              min={0}
+              max={duration || 1}
+              step={0.1}
+              value={position}
+              disabled={!duration || failed}
+              onChange={(event) => seek(event.currentTarget.valueAsNumber)}
+              aria-label="Posição da narração"
+              aria-valuetext={`${formatTime(position)} de ${formatTime(duration)}`}
+            />
+            <div className="section-audio-player-times" aria-hidden="true">
+              <span>{formatTime(position)}</span><span>{formatTime(duration)}</span>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <button
+          type="button"
+          className="section-audio-button"
+          onClick={() => {
+            setActivated(true);
+            togglePlayback();
+          }}
+        >
+          <Volume2 size={17} aria-hidden="true" /> Ouvir este bloco
+        </button>
+      )}
+      {failed && <span className="section-audio-player-error" role="status">Não foi possível tocar o áudio. Tente novamente.</span>}
+    </div>
   );
 }
