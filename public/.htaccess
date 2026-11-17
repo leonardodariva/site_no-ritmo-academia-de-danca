@@ -1,4 +1,20 @@
 # Cache immutable versioned assets for repeat visits while keeping HTML fresh.
+Options -MultiViews -Indexes
+DirectorySlash Off
+RewriteEngine On
+
+# Canonical host and extensionless paths without a trailing slash.
+RewriteCond %{HTTP_HOST} ^www\.entrenoritmo\.com\.br$ [NC]
+RewriteRule ^$ https://entrenoritmo.com.br/ [R=301,L,NE]
+RewriteCond %{HTTP_HOST} ^www\.entrenoritmo\.com\.br$ [NC,OR]
+RewriteCond %{REQUEST_URI} .+/$
+RewriteRule ^(.+?)/?$ https://entrenoritmo.com.br/$1 [R=301,L,NE]
+
+# Static export emits route.html files; serve them at clean extensionless URLs.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [END]
+
 <IfModule mod_headers.c>
   <FilesMatch "\.(?:css|js|mjs|rsc|webp|woff2|svg|ico)$">
     Header set Cache-Control "public, max-age=31536000, immutable"

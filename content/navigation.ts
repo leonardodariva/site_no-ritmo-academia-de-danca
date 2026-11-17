@@ -1,7 +1,7 @@
 export const primaryNavigation = [
   {
     label: "Página inicial",
-    href: "/#conteudo",
+    href: "/",
   },
   {
     label: "A No Ritmo",
