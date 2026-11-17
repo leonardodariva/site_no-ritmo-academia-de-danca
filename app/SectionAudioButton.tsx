@@ -24,7 +24,8 @@ function splitSpeechText(text: string): string[] {
 
 export default function SectionAudioButton({ sectionKey, title }: { sectionKey: string; title: string }) {
   const pathname = usePathname();
-  const audioKey = `${pathname}#${sectionKey}`;
+  const normalizedPathname = pathname === "/" ? pathname : pathname.replace(/\/+$/, "");
+  const audioKey = `${normalizedPathname}#${sectionKey}`;
   const audioSrc = sectionAudioSources[audioKey];
 
   if (audioSrc) {
