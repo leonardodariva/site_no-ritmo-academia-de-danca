@@ -5,10 +5,10 @@ import Link from "next/link";
 import { FaChevronLeft, FaChevronRight, FaPause, FaPlay } from "react-icons/fa";
 
 const slides = [
-  { title: "Conhecer", description: "História, pessoas e visão da No Ritmo.", image: "hero-carousel-media-1", src: "/images/editorial/roda-de-conversa-hero.webp", href: "/sobre" },
-  { title: "Aprender", description: "Aulas e estilos para descobrir a dança.", image: "hero-carousel-media-2", src: "/images/editorial/casal-em-pratica-hero.webp", href: "/modalidades" },
-  { title: "Participar", description: "Aulas, estilos e experiências para cada objetivo.", image: "hero-carousel-media-3", src: "/images/editorial/turma-em-pratica-hero.webp", href: "/aulas" },
-  { title: "Conviver", description: "Encontros e projetos em comunidade.", image: "hero-carousel-media-4", src: "/images/editorial/turma-em-linha-hero.webp", href: "/projetos" },
+  { title: "Conhecer", description: "História, pessoas e visão da No Ritmo.", image: "hero-carousel-media-1", src: "/images/optimized-home/roda-de-conversa-hero-640.webp", srcSet: "/images/optimized-home/roda-de-conversa-hero-480.webp 480w, /images/optimized-home/roda-de-conversa-hero-640.webp 640w, /images/editorial/roda-de-conversa-hero.webp 900w", href: "/sobre" },
+  { title: "Aprender", description: "Aulas e estilos para descobrir a dança.", image: "hero-carousel-media-2", src: "/images/optimized-home/casal-em-pratica-hero-480.webp", srcSet: "/images/optimized-home/casal-em-pratica-hero-480.webp 480w, /images/editorial/casal-em-pratica-hero.webp 900w", href: "/modalidades" },
+  { title: "Participar", description: "Aulas, estilos e experiências para cada objetivo.", image: "hero-carousel-media-3", src: "/images/optimized-home/turma-em-pratica-hero-480.webp", srcSet: "/images/optimized-home/turma-em-pratica-hero-480.webp 480w, /images/editorial/turma-em-pratica-hero.webp 900w", href: "/aulas" },
+  { title: "Conviver", description: "Encontros e projetos em comunidade.", image: "hero-carousel-media-4", src: "/images/optimized-home/turma-em-linha-hero-480.webp", srcSet: "/images/optimized-home/turma-em-linha-hero-480.webp 480w, /images/editorial/turma-em-linha-hero.webp 900w", href: "/projetos" },
 ] as const;
 
 export default function HeroCarousel() {
@@ -54,7 +54,7 @@ export default function HeroCarousel() {
   return <div className="hero-carousel" role="region" aria-roledescription="carrossel" aria-label="Caminhos principais da No Ritmo" onMouseEnter={() => { setIsPointerInside(true); setIsInteractionDismissed(false); }} onMouseLeave={() => { setIsPointerInside(false); setIsInteractionDismissed(false); }} onFocus={() => { setIsFocusInside(true); setIsInteractionDismissed(false); }} onBlur={(event) => { if (!event.currentTarget.contains(event.relatedTarget as Node | null)) { setIsFocusInside(false); setIsInteractionDismissed(false); } }}>
     <span className="sr-only" aria-live="polite" aria-atomic="true">Slide {activeIndex + 1} de {slides.length}: {activeSlide.title}. {activeSlide.description}</span>
     <Link id="hero-carousel-slide" className="hero-carousel-card" href={activeSlide.href} aria-label={`Slide ${activeIndex + 1} de ${slides.length}: ${activeSlide.title}. ${activeSlide.description}`}>
-      <img className={`hero-carousel-media ${activeSlide.image}`} src={activeSlide.src} alt="" aria-hidden="true" loading={activeIndex === 0 ? "eager" : "lazy"} fetchPriority={activeIndex === 0 ? "high" : "auto"} decoding={activeIndex === 0 ? "sync" : "async"} />
+      <img className={`hero-carousel-media ${activeSlide.image}`} src={activeSlide.src} srcSet={activeSlide.srcSet} sizes="(max-width: 980px) 100vw, 38vw" alt="" aria-hidden="true" loading={activeIndex === 0 ? "eager" : "lazy"} fetchPriority={activeIndex === 0 ? "high" : "auto"} decoding={activeIndex === 0 ? "sync" : "async"} />
       <div className="hero-carousel-shade" aria-hidden="true" />
       <div className="hero-carousel-caption"><span>0{activeIndex + 1} / 04</span><strong>{activeSlide.title}</strong><small>{activeSlide.description}</small></div>
     </Link>

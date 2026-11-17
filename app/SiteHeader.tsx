@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import type { MouseEvent } from "react";
@@ -38,7 +37,7 @@ export default function SiteHeader({ floating = false }: { floating?: boolean })
   };
 
   return <>{!floating && <a className="skip-link" href="#main-content">Pular para o conteúdo</a>}<header ref={headerRef} className="site-header">
-    <Link className="brand" href="/" aria-label="No Ritmo - página inicial"><Image className="brand-logo" src="/logo-fundo-claro-header.webp" width={500} height={121} alt="No Ritmo Academia de Dança" priority unoptimized /></Link>
+    <Link className="brand" href="/" aria-label="No Ritmo - página inicial"><img className="brand-logo" src="/images/optimized-home/logo-fundo-claro-header-small.webp" width="360" height="87" alt="No Ritmo Academia de Dança" fetchPriority="high" /></Link>
     <nav className="desktop-nav" aria-label="Navegação principal">{primaryNavigation.map((item) => "children" in item ? <details className="nav-group" name="desktop-navigation" key={item.href} open={openMenu === item.href}><summary onClick={(event) => toggleMenu(event, item.href)}>{item.label}</summary><div className="nav-dropdown"><div className="nav-menu-links">{item.children.map((child) => <Link key={child.href} href={child.href} onClick={closeMenuOnNavigate}><span className="nav-item-copy"><strong>{child.label}</strong><small>{navDescriptions[child.label] ?? "Explore este conteúdo da No Ritmo."}</small></span></Link>)}</div><div className="nav-menu-promo"><div className="nav-menu-promo-image" role="img" aria-label="Aula de dança na No Ritmo" /><strong>Dance no seu ritmo.</strong><small>Conheça as experiências da No Ritmo.</small></div></div></details> : <Link className={item.href === "/area-do-professor" ? "nav-teacher-link" : undefined} key={item.href} href={item.href} onClick={closeMenuOnNavigate}>{item.label}</Link>)}</nav>
     <div className="header-socials" aria-label="Redes sociais da No Ritmo">
       <Link className="header-teacher-link" href="/area-do-professor">Área do professor</Link>

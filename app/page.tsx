@@ -19,7 +19,6 @@ export const metadata: Metadata = { title: "No Ritmo Academia de Dança | Apucar
 
 export default function Home() {
   return <main className="v4-home">
-    <link rel="preload" as="image" href="/images/editorial/roda-de-conversa-hero.webp" fetchPriority="high" />
     <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
     <SiteHeader floating />
 
@@ -42,7 +41,7 @@ export default function Home() {
     <section className="home-music-section" id="musicalidade" aria-labelledby="home-music-title">
       <div className="home-music-heading"><p>Música aplicada à dança</p><h2 id="home-music-title">O espaço entre ouvir e compreender.</h2></div>
       <div className="home-music-copy"><p>Na dança de salão, aprender passos é apenas parte do caminho.<br />Também é preciso compreender o que a música está dizendo ao corpo.</p><p>Nosso ensino aproxima música e movimento, trabalhando pulsação, frases, acentos, pausas e interpretação para que cada escolha de movimento aconteça com mais consciência e intenção.</p><Link className="home-music-link" href="/musicalidade">Conheça o curso de música aplicada à dança</Link></div>
-      <div className="home-music-visual"><img src="/images/musica-aplicada-a-danca-ajustada-display.webp" alt="Professor conduzindo uma prática de ritmo com alunos na No Ritmo" width="800" height="533" loading="lazy" decoding="async" /></div>
+      <div className="home-music-visual"><img src="/images/optimized-home/musica-aplicada-a-danca-ajustada-display-480.webp" srcSet="/images/optimized-home/musica-aplicada-a-danca-ajustada-display-480.webp 480w, /images/optimized-home/musica-aplicada-a-danca-ajustada-display-640.webp 640w, /images/musica-aplicada-a-danca-ajustada-display.webp 800w" sizes="(max-width: 700px) 100vw, 50vw" alt="Professor conduzindo uma prática de ritmo com alunos na No Ritmo" width="800" height="533" loading="lazy" decoding="async" /></div>
     </section>
 
 <section className="home-classes home-services" id="produtos">
@@ -50,12 +49,12 @@ export default function Home() {
       <div className="home-services-grid">
         <article>
           <Link className="service-card-hitarea" href="/aulas-particulares" aria-label="Abrir serviço de aulas particulares" />
-          <img src="/images/servicos/aulas-particulares-card.webp" alt="Duas pessoas praticando dança a dois no estúdio" width="800" height="533" loading="lazy" decoding="async" />
+          <img src="/images/optimized-home/aulas-particulares-card-480.webp" srcSet="/images/optimized-home/aulas-particulares-card-480.webp 480w, /images/optimized-home/aulas-particulares-card-800.webp 800w, /images/servicos/aulas-particulares-card.webp 1200w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw" alt="Duas pessoas praticando dança a dois no estúdio" width="800" height="533" loading="lazy" decoding="async" />
           <div><h3>Aulas particulares</h3><p className="private-lessons-summary">Seu tempo vale muito, as aulas particulares foram pensadas para aproveitá-lo ao máximo.</p><Link href="/aulas-particulares" aria-label="Saiba mais sobre aulas particulares">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
           <Link className="service-card-hitarea" href="/aulas" aria-label="Abrir serviço de aulas em grupo" />
-          <img src="/images/servicos/aulas-em-grupo-dsc05762-card.webp" alt="Alunos reunidos em aula em grupo no estúdio da No Ritmo" width="1200" height="800" loading="lazy" decoding="async" />
+          <img src="/images/optimized-home/aulas-em-grupo-dsc05762-card-480.webp" srcSet="/images/optimized-home/aulas-em-grupo-dsc05762-card-480.webp 480w, /images/optimized-home/aulas-em-grupo-dsc05762-card-800.webp 800w, /images/servicos/aulas-em-grupo-dsc05762-card.webp 1196w" sizes="(max-width: 700px) 100vw, (max-width: 1100px) 50vw, 25vw" alt="Alunos reunidos em aula em grupo no estúdio da No Ritmo" width="1200" height="800" loading="lazy" decoding="async" />
           <div><h3>Aulas em grupo</h3><p className="group-lessons-summary">Aprenda a dançar, pratique e conheça pessoas. Você não precisa ter um par.</p><Link href="/aulas" aria-label="Saiba mais sobre aulas em grupo">Saiba mais sobre o serviço</Link></div>
         </article>
         <article>
