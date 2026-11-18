@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { FaWhatsapp } from "react-icons/fa";
 import "./globals.css";
 import { siteContact } from "../content/site";
 import { defaultSocialImage, siteName, siteUrl } from "../content/seo";
@@ -79,5 +80,5 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       },
     ],
   };
-  return <html lang="pt-BR"><body>{children}<script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
+  return <html lang="pt-BR"><body>{children}<a className="whatsapp-float" href={siteContact.whatsappGeneralHref} target="_blank" rel="noreferrer" aria-label="Conversar com a No Ritmo pelo WhatsApp"><span className="whatsapp-icon" aria-hidden="true"><FaWhatsapp /></span><span className="whatsapp-label"><strong>Conversar</strong><small>com a equipe</small></span></a><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} /></body></html>;
 }

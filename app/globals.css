@@ -1405,3 +1405,14 @@ img, iframe, video { max-width:100%; }
 }
 
 .v4-statement .statement-copy { text-align:left; }
+
+@media(max-width:520px) {
+  .whatsapp-float {
+    display:grid;
+    right:16px;
+    bottom:calc(16px + env(safe-area-inset-bottom));
+    width:40px;
+    height:40px;
+  }
+  .whatsapp-icon { font-size:20px; }
+}
