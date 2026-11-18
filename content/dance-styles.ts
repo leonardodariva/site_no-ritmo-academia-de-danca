@@ -102,7 +102,7 @@ export const danceStyles: DanceStyle[] = [
     "slug": "valsa",
     "name": "Valsa",
     "paragraphs": [
-      "A Valsa possui raízes europeias e tornou-se uma das danças de casal mais reconhecidas do mundo. Ganhou enorme projeção nos salões europeus, especialmente entre os séculos XVIII e XIX, sendo fortemente associada à tradição vienense.",
+      "Possui raízes europeias e tornou-se uma das danças de casal mais reconhecidas do mundo. Ganhou enorme projeção nos salões europeus, especialmente entre os séculos XVIII e XIX, sendo fortemente associada à tradição vienense.",
       "Seu compasso ternário cria a conhecida sensação de movimento contínuo e giratório. Até hoje, a valsa ocupa lugar especial em casamentos, bailes, festas de debutantes e outras celebrações."
     ]
   },
@@ -142,7 +142,7 @@ export const danceStyles: DanceStyle[] = [
     "slug": "milonga",
     "name": "Milonga",
     "paragraphs": [
-      "A Milonga possui raízes culturais no universo do Rio da Prata e está intimamente relacionada à história que posteriormente daria origem ao tango.",
+      "Possui raízes culturais no universo do Rio da Prata e está intimamente relacionada à história que posteriormente daria origem ao tango.",
       "Como gênero musical e dança, geralmente apresenta caráter mais ágil e uma interpretação rítmica particular. Dentro da cultura tanguera, “milonga” também é o nome dado aos encontros e espaços sociais onde as pessoas se reúnem para dançar tango, milonga e valsa."
     ]
   },

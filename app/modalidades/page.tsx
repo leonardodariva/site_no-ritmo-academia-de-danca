@@ -19,7 +19,7 @@ export default function ModalidadesPage() {
     kicker="Encontre seu estilo"
     title="Estilos de dança"
     breadcrumbCurrentLabel="Todos os estilos"
-    intro={<>Um repertório com 22 estilos de dança para conhecer diferentes culturas, musicalidades e formas de dançar.<br /><br />A seguir, uma breve apresentação de cada um, apenas um ponto de partida, porque cada estilo carrega uma história muito mais rica do que cabe em poucas linhas.</>}
+    intro={<>Um repertório com 22 estilos de dança para conhecer diferentes culturas, musicalidades e formas de dançar.<br /><br />A seguir, uma breve apresentação de cada um, apenas um ponto de partida, porque cada estilo carrega uma história muito mais rica e interessante — seria impossível descrevê-las em poucas linhas.</>}
     sections={danceStyles.map((style, index) => ({
       number: String(index + 1).padStart(2, "0"),
       title: style.name,
