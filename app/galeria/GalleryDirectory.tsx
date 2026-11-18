@@ -5,15 +5,14 @@ import { ChevronRight, Search } from "lucide-react";
 import { galleryAlbums } from "../../content/gallery";
 
 export default function GalleryDirectory() {
-  const [filter, setFilter] = useState("Todos");
   const [query, setQuery] = useState("");
   const normalize = (value: string) => value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
   const terms = normalize(query).trim().split(/\s+/).filter(Boolean);
-  const albums = galleryAlbums.filter((album) => (filter === "Todos" || album.category === filter) && terms.every((term) => normalize(album.title + " " + album.category + " " + album.description).includes(term)));
+  const albums = galleryAlbums.filter((album) => terms.every((term) => normalize(album.title + " " + album.category + " " + album.description).includes(term)));
   return <div className="album-directory">
     <p className="album-filter-label">Explore por categoria</p>
     <div className="album-directory-controls">
-      <div className="album-filters" role="group" aria-label="Filtrar álbuns por categoria">{["Todos", "Aulas", "Festas", "Projetos"].map((category) => <button type="button" key={category} aria-pressed={filter === category} onClick={() => setFilter(category)}>{category}</button>)}</div>
+      <div className="album-filters" role="group" aria-label="Categoria dos álbuns"><button type="button" aria-pressed="true">Aulas</button></div>
       <label className="album-search"><Search size={18} aria-hidden="true" /><input type="search" aria-label="Pesquisar álbuns" placeholder="Pesquisar álbuns…" value={query} onChange={(event) => setQuery(event.target.value)} /></label>
     </div>
     {albums.length === 0 && <p className="album-empty">Nenhum álbum encontrado. Tente outro termo ou escolha outra categoria.</p>}
