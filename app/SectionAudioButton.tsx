@@ -22,9 +22,10 @@ function splitSpeechText(text: string): string[] {
   return chunks;
 }
 
-export default function SectionAudioButton({ sectionKey, title }: { sectionKey: string; title: string }) {
+export default function SectionAudioButton({ sectionKey, title, audioPath }: { sectionKey: string; title: string; audioPath?: string }) {
   const pathname = usePathname();
-  const normalizedPathname = pathname === "/" ? pathname : pathname.replace(/\/+$/, "");
+  const sourcePath = audioPath ?? pathname;
+  const normalizedPathname = sourcePath === "/" ? sourcePath : sourcePath.replace(/\/+$/, "");
   const audioKey = `${normalizedPathname}#${sectionKey}`;
   const audioSrc = sectionAudioSources[audioKey];
 

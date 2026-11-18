@@ -24,16 +24,13 @@ const aulasEEncontrosPhotos: GalleryPhoto[] = [
   { src: "/images/galeria/aulas-e-encontros-dsc05558.webp", alt: "Dupla conversando durante uma prática de dança" },
   { src: "/images/galeria/aulas-e-encontros-dsc05645.webp", alt: "Grupo reunido no salão para uma aula de dança" },
   { src: "/images/galeria/aulas-e-encontros-dsc07161.webp", alt: "Casal dançando junto no salão" },
-  { src: "/images/galeria/aulas-e-encontros-nov-2026-01.webp", alt: "Casais praticando dança de salão em uma aula no estúdio" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-02.webp", alt: "Participantes acompanhando uma atividade de dança no salão" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-03.webp", alt: "Professor demonstrando um movimento durante a aula de dança" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-04.webp", alt: "Casal praticando dança de salão durante uma aula" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-05.webp", alt: "Duas alunas dançando juntas no salão" },
   { src: "/images/galeria/aulas-e-encontros-nov-2026-06.webp", alt: "Casal sorrindo enquanto dança em uma aula" },
   { src: "/images/editorial/dupla-de-costas.webp", alt: "Dupla praticando dança de salão" },
-  { src: "/images/editorial/turma-em-pratica.webp", alt: "Turma reunida para uma prática de dança" },
   { src: "/images/editorial/turma-em-linha.webp", alt: "Turma durante uma atividade coletiva de dança" },
-  { src: "/images/editorial/roda-de-conversa.webp", alt: "Grupo reunido em uma atividade da No Ritmo" },
 ];
 
 export const galleryAlbums = [

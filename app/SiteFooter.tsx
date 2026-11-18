@@ -9,6 +9,6 @@ export default function SiteFooter() {
     <div><strong>Conhecer</strong>{footerNavigation.conhecer.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}</div>
     <div><strong>Participar</strong>{footerNavigation.participar.map((item) => <Link key={item.href} href={item.href}>{item.label}</Link>)}</div>
     <div className="v4-footer-contact"><strong>Contato</strong><a href={siteContact.phoneHref}>{siteContact.phoneDisplay}</a><a href={siteContact.emailHref}>{siteContact.email}</a><span>{siteContact.city} - {siteContact.state}</span></div>
-    <div className="v4-footer-bottom"><span>© {new Date().getFullYear()} No Ritmo Academia de Dança</span><span>Conteúdo institucional e editorial</span></div>
+    <div className="v4-footer-bottom"><span>© 2026 No Ritmo Academia de Dança®. Todos os direitos reservados.</span></div>
   </footer>;
 }

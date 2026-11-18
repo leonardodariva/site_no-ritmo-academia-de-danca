@@ -6,6 +6,8 @@ import { AtSign, MapPin, Phone } from "lucide-react";
 import { danceModalities } from "../content/classes";
 import { siteContact, weeklySchedule } from "../content/site";
 import MapEmbed from "./MapEmbed";
+import FaqAnswer from "./FaqAnswer";
+import SectionAudioButton from "./SectionAudioButton";
 import { frequentlyAskedQuestions } from "../content/faq";
 import SiteFooter from "./SiteFooter";
 import SiteHeader from "./SiteHeader";
@@ -120,7 +122,7 @@ export default function Home() {
 
     <section className="home-practical home-schedule-section" id="horarios" aria-labelledby="home-schedule-section-title">
       <div className="v4-section-heading"><p>Aulas em turma</p><h2 id="home-schedule-section-title">Programação Semanal de Aulas em Turma.</h2><Link className="button schedule-action" href="/contato">Agende sua aula</Link></div>
-      <article className="home-schedule" aria-labelledby="home-schedule-section-title">{weeklySchedule.filter((day) => day.sessions.length).map((day) => <div key={day.day}><span className="home-schedule-day-label"><strong>{day.day}</strong><small>{day.teacher}</small></span><span>{day.sessions.map((session) => <span key={`${day.day}-${session.level}`}><b>{session.level}</b>: {session.time}</span>)}</span></div>)}</article>
+      <article className="home-schedule" aria-labelledby="home-schedule-section-title">{weeklySchedule.filter((day) => day.sessions.length).map((day) => <div key={day.day}><span className="home-schedule-day-label"><strong>{day.day}</strong><small>{day.teacher}</small></span><span className="home-schedule-sessions">{day.sessions.map((session) => <span className="home-schedule-session" key={`${day.day}-${session.level}`}><b>{session.level}</b><time>{session.time}</time></span>)}</span></div>)}</article>
     </section>
 
     <section className="home-practical home-contact-section" id="pratico" aria-labelledby="home-contact-section-title">
@@ -130,7 +132,7 @@ export default function Home() {
 
     <section className="home-faq" id="faq" aria-labelledby="home-faq-title">
       <div className="v4-section-heading faq-heading"><p>Perguntas frequentes</p><div className="faq-heading-row"><div><h2 id="home-faq-title">Antes de começar, tire suas dúvidas.</h2></div><Link className="button faq-all-button" href="/faq">Ver perguntas frequentes</Link></div></div>
-      <div className="home-faq-list">{frequentlyAskedQuestions.map((item) => <details key={item.question}><summary>{item.question}</summary><p>{item.answer}</p></details>)}</div>
+      <div className="home-faq-list">{frequentlyAskedQuestions.map((item, index) => <details key={item.question}><summary>{item.question}</summary><div className="home-faq-answer"><FaqAnswer answer={item.answer} /><SectionAudioButton audioPath="/faq" sectionKey={String(index + 1).padStart(2, "0")} title={item.question} /></div></details>)}</div>
     </section>
 
     <SiteFooter />
