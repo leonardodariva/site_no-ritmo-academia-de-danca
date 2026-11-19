@@ -10,9 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function PrinciplesPage() {
-  return <SubpageShell wideCopy compactHero kicker="Nossos princípios" title="Missão, visão e valores" intro="Os princípios que orientam nossa forma de ensinar, conviver e promover o desenvolvimento humano por meio da dança de salão." sections={[
-    { number: "missao", id: "missao", title: "Missão", paragraphs: [mission] },
-    { number: "visao", id: "visao", title: "Visão", paragraphs: [vision] },
-    { number: "valores", id: "valores", title: "Valores", paragraphs: values.map(value => <><strong>{value.title}</strong><br />{value.text}</>) },
+  return <SubpageShell wideCopy compactHero heroImage="/images/editorial/missao-visao-valores-turma-hero.webp" kicker="Nossos princípios" title="Missão, visão e valores" intro="Os princípios que orientam nossa forma de ensinar, conviver e promover o desenvolvimento humano por meio da dança de salão." sections={[
+    { number: "missao", id: "missao", title: "Missão.", paragraphs: [mission] },
+    { number: "visao", id: "visao", title: "Visão.", paragraphs: [vision] },
+    { number: "valores", id: "valores", title: "Valores.", paragraphs: values.map(value => <><strong>{value.title}</strong><br />{value.text}</>) },
   ]} />;
 }

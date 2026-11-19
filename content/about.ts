@@ -32,7 +32,7 @@ export const institutionalSections: InstitutionalSection[] = [
   {
     title: "Dança é relação.",
     paragraphs: [
-      "Na dança de salão, ninguém dança sozinho.",
+      "Na dança de salão, ninguém deveria dançar sozinho.",
       "É necessário perceber o próprio corpo e, ao mesmo tempo, perceber o outro. Comunicar uma intenção, interpretar uma informação, ajustar força, espaço, direção, tempo e movimento.",
       "Por isso, muitas competências desenvolvidas dentro de uma aula ultrapassam naturalmente os limites da pista de dança.",
       "Ao aprender a dançar, uma pessoa pode também desenvolver sua capacidade de escutar, comunicar-se, relacionar-se, tomar decisões, lidar com erros, adaptar-se e participar de ambientes sociais com maior segurança e autonomia.",

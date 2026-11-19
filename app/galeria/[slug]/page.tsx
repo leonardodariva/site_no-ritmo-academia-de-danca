@@ -16,7 +16,7 @@ export default async function AlbumPage({ params }: { params: Promise<{ slug: st
   const { slug } = await params;
   const album = galleryAlbums.find((item) => item.slug === slug);
   if (!album) notFound();
-  return <SubpageShell breadcrumbParent={{ label: "Álbuns", href: "/galeria" }} compactHero wideCopy kicker="Galeria" title={album.title} intro={album.description} sections={[{ number: "01", title: "Cada foto, um novo olhar.", titleAddon: <><Link className="album-back-link" href="/galeria"><ArrowLeft size={15} aria-hidden="true" />Voltar a todos os álbuns</Link><span className="album-photo-count">{album.category} · <strong>{album.photos.length} {album.photos.length === 1 ? "foto" : "fotos"}</strong></span></>, fullWidth: true, content: <>
+  return <SubpageShell breadcrumbParent={{ label: "Álbuns", href: "/galeria" }} compactHero wideCopy heroImage={album.slug === "aulas-e-encontros" ? "/images/galeria/aulas-e-encontros-giro-1001328379.webp" : undefined} heroImagePosition="center 22%" kicker="Galeria" title={album.title} intro={album.description} sections={[{ number: "01", title: "Cada foto, um novo olhar.", titleAddon: <><Link className="album-back-link" href="/galeria"><ArrowLeft size={15} aria-hidden="true" />Voltar a todos os álbuns</Link><span className="album-photo-count">{album.category} · <strong>{album.photos.length} {album.photos.length === 1 ? "foto" : "fotos"}</strong></span></>, fullWidth: true, content: <>
     <AlbumPhotos album={album} />
   </> }]} />;
 }

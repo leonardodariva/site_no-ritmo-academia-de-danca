@@ -17,7 +17,7 @@ export default function AulasPage() {
     <SubpageShell
       wideCopy
       compactHero
-      heroImage="/images/servicos/aulas-em-grupo.webp"
+      heroImage="/images/editorial/aulas-em-grupo-turma-hero.webp"
       kicker="Aprenda, pratique, conecte-se."
       title="Aulas em Grupo"
       breadcrumbParent={{ label: "Serviços", href: "/servicos" }}

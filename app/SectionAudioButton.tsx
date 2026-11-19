@@ -176,6 +176,13 @@ function SectionAudioPlayer({ audioKey, audioSrc, title }: { audioKey: string; a
   const [elapsed, setElapsed] = useState(0);
   const [duration, setDuration] = useState(0);
   const [failed, setFailed] = useState(false);
+  const [playbackRate, setPlaybackRate] = useState(1);
+
+  function cyclePlaybackRate() {
+    const nextRate = playbackRate === 1 ? 1.5 : playbackRate === 1.5 ? 2 : 1;
+    if (audioRef.current) audioRef.current.playbackRate = nextRate;
+    setPlaybackRate(nextRate);
+  }
 
   useEffect(() => {
     const audio = audioRef.current;
@@ -212,6 +219,7 @@ function SectionAudioPlayer({ audioKey, audioSrc, title }: { audioKey: string; a
 
     setFailed(false);
     if (audio.error) audio.load();
+    audio.playbackRate = playbackRate;
     window.dispatchEvent(new CustomEvent(audioStartEvent, { detail: audioKey }));
     void audio.play().catch((error: unknown) => {
       if (!(error instanceof DOMException && error.name === "AbortError")) setFailed(true);
@@ -256,6 +264,15 @@ function SectionAudioPlayer({ audioKey, audioSrc, title }: { audioKey: string; a
             aria-label={playing ? "Pausar narração" : "Reproduzir narração"}
           >
             {playing ? <Pause size={18} fill="currentColor" aria-hidden="true" /> : <Play size={18} fill="currentColor" aria-hidden="true" />}
+          </button>
+          <button
+            type="button"
+            className="section-audio-player-speed"
+            onClick={cyclePlaybackRate}
+            aria-label={`Velocidade ${String(playbackRate).replace(".", ",")} vezes. Alterar para ${playbackRate === 1 ? "1,5" : playbackRate === 1.5 ? "2" : "1"} vezes`}
+            title="Alternar velocidade: 1×, 1,5× e 2×"
+          >
+            {String(playbackRate).replace(".", ",")}×
           </button>
           <div className="section-audio-player-progress">
             <input
