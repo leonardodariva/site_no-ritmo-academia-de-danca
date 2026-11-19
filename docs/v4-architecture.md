@@ -15,7 +15,7 @@ A V4 organiza o site em três intenções claras: **conhecer**, **aprender** e *
 - `/artigos/[slug]`: leitura individual.
 - `/autores`: autoria, revisão e conteúdos publicados.
 - `/aulas`: formatos, funcionamento e orientação para iniciantes.
-- `/modalidades`: ritmos e experiências confirmadas.
+- `/estilos-de-danca`: ritmos e experiências confirmadas.
 - `/servicos`: diretório de serviços da academia.
 - `/formacao`: apresentação dos programas CFP e CFA.
 - `/coreografias/casamentos`, `/coreografias/debutantes`, `/coreografias/eventos`, `/coreografias/gincanas`: páginas específicas de coreografias.

@@ -19,7 +19,7 @@ Site institucional da No Ritmo, construído com React 19, Next/Vinext e Vite, co
 |---|---|
 | `/` | Home institucional |
 | `/sobre` | História, identidade e filosofia |
-| `/modalidades` | Formatos de experiência |
+| `/estilos-de-danca` | Formatos de experiência |
 | `/aulas` | Como funcionam as aulas |
 | `/aulas-particulares` | Aulas individuais ou em casal |
 | `/horarios` | Tabela de horários |

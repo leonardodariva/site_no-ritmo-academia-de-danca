@@ -10,7 +10,7 @@
 | `/sobre` | História, visão e metodologia |
 | `/professores` | Estrutura de perfis da equipe |
 | `/aulas` | Formatos de aula |
-| `/modalidades` | Ritmos e níveis |
+| `/estilos-de-danca` | Ritmos e níveis |
 | `/aulas-particulares` | Produto de aulas individuais ou em casal |
 | `/servicos` | Diretório de serviços |
 | `/coreografias/casamentos` | Projetos para casamentos |

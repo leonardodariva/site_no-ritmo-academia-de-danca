@@ -44,6 +44,19 @@ export default function SiteHeader({ floating = false }: { floating?: boolean })
       <a className="social-link" href="https://www.instagram.com/noritmoacademiadedanca/" target="_blank" rel="noreferrer" aria-label="Instagram da No Ritmo"><FaInstagram aria-hidden="true" /></a>
       <a className="social-link" href="https://www.facebook.com/NoRitmoAcademiadeDanca?locale=pt_BR" target="_blank" rel="noreferrer" aria-label="Facebook da No Ritmo"><FaFacebookF aria-hidden="true" /></a>
     </div>
-    <details className="mobile-menu"><summary aria-label="Abrir menu">Menu</summary><nav aria-label="Navegação mobile">{primaryNavigation.map((item) => "children" in item ? <div className="mobile-nav-section" key={item.href}><strong>{item.label}</strong>{item.children.map((child) => <Link key={child.href} href={child.href} onClick={closeMenuOnNavigate}>{child.label}</Link>)}</div> : <Link key={item.href} href={item.href} onClick={closeMenuOnNavigate}>{item.label}</Link>)}<Link className="mobile-teacher-link" href="/area-do-professor" onClick={closeMenuOnNavigate}>Área do professor</Link></nav></details>
+    <details className="mobile-menu">
+      <summary aria-label="Abrir ou fechar navegação"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round"><path d="M4 6h16M4 12h16M4 18h16" /></svg></summary>
+      <nav aria-label="Navegação mobile">
+        <div className="mobile-menu-actions">
+          <Link className="mobile-teacher-link" href="/area-do-professor" onClick={closeMenuOnNavigate}>Área do professor</Link>
+          <Link className="mobile-student-link" href="/area-do-aluno" onClick={closeMenuOnNavigate}>Área do aluno</Link>
+        </div>
+        <div className="mobile-menu-socials" aria-label="Redes sociais da No Ritmo">
+          <a className="social-link" href="https://www.instagram.com/noritmoacademiadedanca/" target="_blank" rel="noreferrer" aria-label="Instagram da No Ritmo"><FaInstagram aria-hidden="true" /><span>Instagram</span></a>
+          <a className="social-link" href="https://www.facebook.com/NoRitmoAcademiadeDanca?locale=pt_BR" target="_blank" rel="noreferrer" aria-label="Facebook da No Ritmo"><FaFacebookF aria-hidden="true" /><span>Facebook</span></a>
+        </div>
+        {primaryNavigation.map((item) => "children" in item ? <div className="mobile-nav-section" key={item.href}><strong>{item.label}</strong>{item.children.map((child) => <Link key={child.href} href={child.href} onClick={closeMenuOnNavigate}>{child.label}</Link>)}</div> : <Link key={item.href} href={item.href} onClick={closeMenuOnNavigate}>{item.label}</Link>)}
+      </nav>
+    </details>
   </header></>;
 }

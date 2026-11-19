@@ -96,7 +96,7 @@ export default function Home() {
 
     <section className="home-modalities" id="estilos">
       <div className="v4-section-heading"><p>Estilos</p><h2><span>Diferentes estilos, novas formas</span><span>de compreender a dança.</span></h2></div>
-      <div className="home-modality-grid">{danceModalities.filter((item) => ["forro", "zouk", "samba-de-gafieira", "tango", "sertanejo", "vaneira", "bachata"].includes(item.slug)).map((item) => <Link href={`/modalidades#${item.slug}`} key={item.name}><h3>{item.name}</h3><p>{item.summary}</p><strong>Conhecer estilo</strong></Link>)}<Link className="home-modality-all" href="/modalidades"><h3>Conheça todos os estilos</h3><p>Explore os 22 estilos trabalhados pela Academia No Ritmo.</p><strong className="home-modality-arrow" aria-hidden="true">→</strong></Link></div>
+      <div className="home-modality-grid">{danceModalities.filter((item) => ["forro", "zouk", "samba-de-gafieira", "tango", "sertanejo", "vaneira", "bachata"].includes(item.slug)).map((item) => <Link href={`/estilos-de-danca#${item.slug}`} key={item.name}><h3>{item.name}</h3><p>{item.summary}</p><strong>Conhecer estilo</strong></Link>)}<Link className="home-modality-all" href="/estilos-de-danca"><h3>Conheça todos os estilos</h3><p>Explore os 22 estilos trabalhados pela Academia No Ritmo.</p><strong className="home-modality-arrow" aria-hidden="true">→</strong></Link></div>
     </section>
 
     <section className="home-team" id="equipe" aria-labelledby="home-team-title">

@@ -7,7 +7,7 @@ Integração de 17/11/2026: 108 gravações completas com a voz Luciano, em 14 p
 | Sobre a No Ritmo | `/sobre` | 7 |
 | Missão, visão e valores | `/missao-visao-valores` | 3 |
 | Aulas em grupo | `/aulas` | 10 |
-| Estilos de dança | `/modalidades` | 22 |
+| Estilos de dança | `/estilos-de-danca` | 22 |
 | Música e musicalidade | `/musicalidade` | 13 |
 | Turmas e horários | `/horarios` | 3 |
 | Aulas particulares | `/aulas-particulares` | 9 |

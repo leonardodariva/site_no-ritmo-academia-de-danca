@@ -36,7 +36,7 @@ test("renderiza a página inicial da No Ritmo", async () => {
 });
 
 test("todas as rotas públicas principais respondem sem erro", async () => {
-  const routes = ["/sobre", "/missao-visao-valores", "/aulas", "/aulas-particulares", "/modalidades", "/servicos", "/formacao", "/formacao/cfp", "/formacao/cfa", "/coreografias/casamentos", "/coreografias/debutantes", "/coreografias/eventos", "/coreografias/gincanas", "/horarios", "/galeria", "/galeria/aulas-e-encontros", "/galeria/pratica-de-danca", "/galeria/projetos-e-comunidade", "/projetos", "/projetos/danca-de-salao-gratuita-apucarana", "/faq", "/contato"];
+  const routes = ["/sobre", "/missao-visao-valores", "/aulas", "/aulas-particulares", "/estilos-de-danca", "/servicos", "/formacao", "/formacao/cfp", "/formacao/cfa", "/coreografias/casamentos", "/coreografias/debutantes", "/coreografias/eventos", "/coreografias/gincanas", "/horarios", "/galeria", "/galeria/aulas-e-encontros", "/galeria/pratica-de-danca", "/galeria/projetos-e-comunidade", "/projetos", "/projetos/danca-de-salao-gratuita-apucarana", "/faq", "/contato"];
   for (const route of routes) { const response = await render(route); assert.equal(response.status, 200, `${route} deveria responder 200`); }
 });
 
@@ -63,7 +63,7 @@ test("contato e horários exibem os dados centralizados", async () => {
 });
 
 test("modalidades e aulas apresentam conteúdo útil sem texto de preparação", async () => {
-  const modalitiesHtml = await (await render("/modalidades")).text();
+  const modalitiesHtml = await (await render("/estilos-de-danca")).text();
   assert.match(modalitiesHtml, /Samba de Gafieira/i);
   assert.doesNotMatch(modalitiesHtml, /será atualizada|terá uma explicação/i);
 

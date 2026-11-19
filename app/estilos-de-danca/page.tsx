@@ -8,11 +8,11 @@ const description = "Conheça os 22 estilos de dança trabalhados pela Academia 
 export const metadata: Metadata = {
   title,
   description,
-  alternates: { canonical: "/modalidades" },
-  openGraph: { title, description, url: "/modalidades", images: ["/images/galeria/aulas-e-encontros-banner.webp"] },
+  alternates: { canonical: "/estilos-de-danca" },
+  openGraph: { title, description, url: "/estilos-de-danca", images: ["/images/galeria/aulas-e-encontros-banner.webp"] },
 };
 
-export default function ModalidadesPage() {
+export default function EstilosDeDancaPage() {
   return <SubpageShell
     wideCopy
     compactHero
