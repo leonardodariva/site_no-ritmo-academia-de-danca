@@ -301,8 +301,12 @@ footer { background:#0b0b0f; color:var(--cream); padding:80px 8vw 25px; }.brand-
 .home-schedule-section .home-schedule>div .home-schedule-session b { color:#fff; white-space:nowrap; }
 .home-schedule-section .home-schedule>div .home-schedule-session time { color:#dbe5ff; font-variant-numeric:tabular-nums; white-space:nowrap; }
 @media(max-width:680px){ .home-schedule-section { padding-block:72px; }.home-schedule-section .home-schedule { padding-top:10px; }.home-schedule-section .home-schedule>div { padding:16px 0; } }
-@media(max-width:680px){ .home-schedule-section .home-schedule>div { grid-template-columns:minmax(0,1fr); gap:10px; }.home-schedule-section .home-schedule>div .home-schedule-session { grid-template-columns:minmax(132px,.9fr) minmax(130px,1fr); gap:10px; } }
-@media(max-width:380px){ .home-schedule-section .home-schedule>div .home-schedule-session { grid-template-columns:minmax(118px,.9fr) minmax(120px,1fr); gap:8px; font-size:15px; } }
+@media(max-width:680px){
+  .home-schedule-section .home-schedule>div { grid-template-columns:minmax(0,2fr) minmax(0,3fr); gap:12px; }
+  .home-schedule-section .home-schedule>div .home-schedule-session { grid-template-columns:minmax(0,1fr); gap:4px; font-size:15px; text-align:right; }
+  .home-schedule-section .home-schedule>div .home-schedule-session b,
+  .home-schedule-section .home-schedule>div .home-schedule-session time { white-space:normal; }
+}
 @media(max-width:680px){ .home-contact-split { grid-template-columns:1fr; gap:20px; }.home-contact-channels,.home-contact-card { padding:25px; }.home-contact-channels { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (max-width:900px){ .home-contact-channels .contact-with-icon { font-size:16px; } }
 .v4-footer-intro hr { border:0; border-top:1px solid rgba(255,255,255,.25); margin:18px 0 14px; }
@@ -1514,14 +1518,15 @@ img, iframe, video { max-width:100%; }
   white-space:nowrap;
 }
 @media(max-width:680px) {
-  .schedule-page-table>div { gap:10px; }
-}
-@media(max-width:420px) {
+  .schedule-page-table { justify-self:stretch; }
+  .schedule-page-table>div { grid-template-columns:minmax(0,2fr) minmax(0,3fr); gap:12px; }
   .schedule-page-table .schedule-session {
-    grid-template-columns:minmax(118px,.9fr) minmax(125px,1fr);
-    gap:8px;
+    grid-template-columns:minmax(0,1fr);
+    gap:4px;
     font-size:15px;
   }
+  .schedule-page-table .schedule-session b,
+  .schedule-page-table .schedule-session time { text-align:right; white-space:normal; }
 }
 
 /* Red CTAs use the approved transparent orange outline treatment site-wide. */
